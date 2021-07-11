@@ -169,6 +169,11 @@
 
                     &>div {
                         padding: 0 .5em;
+                        & *:nth-child(1){
+                            font-size: 1.2em;
+                            font-weight: 800;
+                            margin-bottom: .3em;
+                        }
                     }
 
                     &::before {
