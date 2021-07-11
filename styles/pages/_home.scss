@@ -16,6 +16,7 @@
             grid-template-rows: 50vh 40vh;
             height: 100%;
             overflow: hidden;
+            place-items: center;
 
             // &::before {
             //     content: '';
@@ -60,6 +61,81 @@
                 & .landing-btn {
                     box-shadow: $box-shadow;
                     padding: .7em 1em;
+                    background-color: $black;
+                    border: 0;
+
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+
+            & .landing-icon {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .landing-section {
+        position: relative;
+        height: 100vh;
+        min-height: max-content;
+
+        & .landing-container {
+            position: relative;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40vh 60vh;
+            place-items: center;
+            overflow: hidden;
+
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 50%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            // }
+
+            & .landing-heading {
+                height: 100%;
+                position: relative;
+                height: max-content;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 1em;
+                top: 2em;
+
+                & h1 {
+                    font-size: 2em;
+                    margin-bottom: .5em;
+                }
+
+                & p {
+                    line-height: 1.5em;
+                    margin-bottom: .7em;
+                    font-size: 1.2em;
+                }
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                & .landing-btn {
+                    box-shadow: $box-shadow;
+                    padding: 1em 1.7em;
                     background-color: $black;
                     border: 0;
 
@@ -149,5 +225,240 @@
                 font-size: 1.5em;
             }
         }
+    }
+}
+
+@media (min-width: 530px) {
+    .landing-section {
+        position: relative;
+        height: 100vh;
+        min-height: max-content;
+
+        & .landing-container {
+            position: relative;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40vh 60vh;
+            place-items: center;
+            overflow: hidden;
+
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 50%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            // }
+
+            & .landing-heading {
+                height: 100%;
+                position: relative;
+                height: max-content;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 1em;
+                top: 2em;
+
+                & h1 {
+                    font-size: 2em;
+                    margin-bottom: .5em;
+                }
+
+                & p {
+                    line-height: 1.5em;
+                    margin-bottom: .7em;
+                    font-size: 1.2em;
+                }
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                & .landing-btn {
+                    box-shadow: $box-shadow;
+                    padding: 1em 1.7em;
+                    background-color: $black;
+                    border: 0;
+
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+
+            & .landing-icon {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .landing-section {
+        position: relative;
+        height: 100vh;
+        min-height: max-content;
+
+        & .landing-container {
+            position: relative;
+            margin: auto;
+            max-width: 80%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40vh 50vh;
+            place-items: center;
+            overflow: hidden;
+
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 50%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            // }
+
+            & .landing-heading {
+                height: 100%;
+                position: relative;
+                height: max-content;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 1em;
+                top: 2em;
+
+                & h1 {
+                    font-size: 2em;
+                    margin-bottom: .5em;
+                }
+
+                & p {
+                    line-height: 1.5em;
+                    margin-bottom: .7em;
+                    font-size: 1.2em;
+                }
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                & .landing-btn {
+                    box-shadow: $box-shadow;
+                    padding: 1em 1.7em;
+                    background-color: $black;
+                    border: 0;
+
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+
+            & .landing-icon {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .landing-section {
+        position: relative;
+        height: 100vh;
+        min-height: max-content;
+        display: grid;
+        place-items: center;
+
+        & .landing-container {
+            position: relative;
+            margin: auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            place-items: center;
+            overflow: hidden;
+            height: auto;
+
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 50%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            // }
+
+            & .landing-heading {
+                height: max-content;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 1em;
+                top: 0;
+                height: 100%;
+
+                & h1 {
+                    font-size: 2.1em;
+                    margin-bottom: .5em;
+                }
+
+                & p {
+                    line-height: 1.5em;
+                    margin-bottom: .7em;
+                    font-size: .9em;
+                }
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                & .landing-btn {
+                    box-shadow: $box-shadow;
+                    padding: 1em 1.7em;
+                    background-color: $black;
+                    border: 0;
+
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+
+            & .landing-icon {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .landing-section {
+        height: auto;
     }
 }

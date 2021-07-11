@@ -534,6 +534,7 @@ nav {
         grid-template-rows: 50vh 40vh;
     height: 100%;
     overflow: hidden;
+    place-items: center;
   }
   .landing-section .landing-container .landing-heading {
     height: 100%;
@@ -574,6 +575,76 @@ nav {
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: .7em 1em;
+    background-color: #000814;
+    border: 0;
+  }
+  .landing-section .landing-container img {
+    width: 100%;
+  }
+  .landing-section .landing-container .landing-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 375px) {
+  .landing-section {
+    position: relative;
+    height: 100vh;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+  .landing-section .landing-container {
+    position: relative;
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40vh 60vh;
+        grid-template-rows: 40vh 60vh;
+    place-items: center;
+    overflow: hidden;
+  }
+  .landing-section .landing-container .landing-heading {
+    height: 100%;
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em;
+    top: 2em;
+  }
+  .landing-section .landing-container .landing-heading h1 {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  .landing-section .landing-container .landing-heading p {
+    line-height: 1.5em;
+    margin-bottom: .7em;
+    font-size: 1.2em;
+  }
+  .landing-section .landing-container .landing-heading a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .landing-section .landing-container .landing-heading .landing-btn {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em 1.7em;
     background-color: #000814;
     border: 0;
   }
@@ -652,6 +723,227 @@ nav {
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
+  }
+}
+
+@media (min-width: 530px) {
+  .landing-section {
+    position: relative;
+    height: 100vh;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+  .landing-section .landing-container {
+    position: relative;
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40vh 60vh;
+        grid-template-rows: 40vh 60vh;
+    place-items: center;
+    overflow: hidden;
+  }
+  .landing-section .landing-container .landing-heading {
+    height: 100%;
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em;
+    top: 2em;
+  }
+  .landing-section .landing-container .landing-heading h1 {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  .landing-section .landing-container .landing-heading p {
+    line-height: 1.5em;
+    margin-bottom: .7em;
+    font-size: 1.2em;
+  }
+  .landing-section .landing-container .landing-heading a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .landing-section .landing-container .landing-heading .landing-btn {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em 1.7em;
+    background-color: #000814;
+    border: 0;
+  }
+  .landing-section .landing-container img {
+    width: 100%;
+  }
+  .landing-section .landing-container .landing-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-section {
+    position: relative;
+    height: 100vh;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+  .landing-section .landing-container {
+    position: relative;
+    margin: auto;
+    max-width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40vh 50vh;
+        grid-template-rows: 40vh 50vh;
+    place-items: center;
+    overflow: hidden;
+  }
+  .landing-section .landing-container .landing-heading {
+    height: 100%;
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em;
+    top: 2em;
+  }
+  .landing-section .landing-container .landing-heading h1 {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  .landing-section .landing-container .landing-heading p {
+    line-height: 1.5em;
+    margin-bottom: .7em;
+    font-size: 1.2em;
+  }
+  .landing-section .landing-container .landing-heading a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .landing-section .landing-container .landing-heading .landing-btn {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em 1.7em;
+    background-color: #000814;
+    border: 0;
+  }
+  .landing-section .landing-container img {
+    width: 100%;
+  }
+  .landing-section .landing-container .landing-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-section {
+    position: relative;
+    height: 100vh;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .landing-section .landing-container {
+    position: relative;
+    margin: auto;
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    place-items: center;
+    overflow: hidden;
+    height: auto;
+  }
+  .landing-section .landing-container .landing-heading {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em;
+    top: 0;
+    height: 100%;
+  }
+  .landing-section .landing-container .landing-heading h1 {
+    font-size: 2.1em;
+    margin-bottom: .5em;
+  }
+  .landing-section .landing-container .landing-heading p {
+    line-height: 1.5em;
+    margin-bottom: .7em;
+    font-size: .9em;
+  }
+  .landing-section .landing-container .landing-heading a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .landing-section .landing-container .landing-heading .landing-btn {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em 1.7em;
+    background-color: #000814;
+    border: 0;
+  }
+  .landing-section .landing-container img {
+    width: 100%;
+  }
+  .landing-section .landing-container .landing-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .landing-section {
+    height: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
