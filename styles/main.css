@@ -600,8 +600,8 @@ nav {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 40vh 50vh;
-        grid-template-rows: 40vh 50vh;
+    -ms-grid-rows: 40vh 60vh;
+        grid-template-rows: 40vh 60vh;
     place-items: center;
     overflow: hidden;
   }
