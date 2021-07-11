@@ -76,17 +76,40 @@
             }
         }
     }
+
     // Intro Section
     .intro-section {
         width: 100%;
-        & .intro-heading{
+
+        & .intro-heading {
             padding: 1em;
-            & h2{
+
+            & h2 {
                 margin-bottom: .5em;
             }
+
             & p {
                 line-height: 1.4em;
             }
+        }
+
+        & .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            padding: 1em;
+        }
+
+        & .service {
+            padding: 1em;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.10);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5.0px);
+            -webkit-backdrop-filter: blur(5.0px);
+            border-radius: 0px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            margin-bottom: 1em;
         }
     }
 }
