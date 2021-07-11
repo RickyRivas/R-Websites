@@ -516,10 +516,6 @@ nav {
 
 /* Main Container CSS */
 @media (min-width: 0px) {
-  body {
-    background-image: linear-gradient(0deg, #d5e5b7 0%, #d5e5b7 17%, #bdd5be 17%, #bdd5be 29%, #a6c4c4 29%, #a6c4c4 38%, #8eb4cb 38%, #8eb4cb 47%, #76a4d2 47%, #76a4d2 58%, #5f93d8 58%, #5f93d8 88%, #4783df 88%, #4783df 100%), linear-gradient(157.5deg, #d5e5b7 0%, #d5e5b7 17%, #bdd5be 17%, #bdd5be 29%, #a6c4c4 29%, #a6c4c4 38%, #8eb4cb 38%, #8eb4cb 47%, #76a4d2 47%, #76a4d2 58%, #5f93d8 58%, #5f93d8 88%, #4783df 88%, #4783df 100%), linear-gradient(112.5deg, #d5e5b7 0%, #d5e5b7 17%, #bdd5be 17%, #bdd5be 29%, #a6c4c4 29%, #a6c4c4 38%, #8eb4cb 38%, #8eb4cb 47%, #76a4d2 47%, #76a4d2 58%, #5f93d8 58%, #5f93d8 88%, #4783df 88%, #4783df 100%), linear-gradient(90deg, #d5e5b7 0%, #d5e5b7 17%, #bdd5be 17%, #bdd5be 29%, #a6c4c4 29%, #a6c4c4 38%, #8eb4cb 38%, #8eb4cb 47%, #76a4d2 47%, #76a4d2 58%, #5f93d8 58%, #5f93d8 88%, #4783df 88%, #4783df 100%), linear-gradient(90deg, #ad5c5f, #6e14ae);
-    background-blend-mode: overlay,overlay,overlay,overlay,normal;
-  }
   .landing-section {
     position: relative;
     width: 100%;
