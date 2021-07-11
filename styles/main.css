@@ -516,6 +516,10 @@ nav {
 
 /* Main Container CSS */
 @media (min-width: 0px) {
+  body {
+    background-image: linear-gradient(90deg, #ededed, #ececec), linear-gradient(135deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%), linear-gradient(112.5deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%), linear-gradient(90deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%);
+    background-blend-mode: overlay, overlay, overlay, normal;
+  }
   .landing-section {
     position: relative;
     width: 100%;
