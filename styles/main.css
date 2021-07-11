@@ -838,6 +838,52 @@ nav {
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
   }
+  .intro-section {
+    width: 100%;
+  }
+  .intro-section .intro-heading {
+    padding: 1em;
+    text-align: center;
+  }
+  .intro-section .intro-heading h2 {
+    margin-bottom: .5em;
+  }
+  .intro-section .intro-heading p {
+    line-height: 1.4em;
+  }
+  .intro-section .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+  }
+  .intro-section .service {
+    padding: 1em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 1em;
+  }
+  .intro-section .service *:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: .5em;
+  }
+  .intro-section .service img {
+    width: 3.5em;
+    height: 3.5em;
+    margin-bottom: .5em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -982,6 +1028,53 @@ nav {
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
+  }
+  .intro-section {
+    width: 100%;
+  }
+  .intro-section .intro-heading {
+    padding: 1em;
+    text-align: center;
+  }
+  .intro-section .intro-heading h2 {
+    margin-bottom: .5em;
+  }
+  .intro-section .intro-heading p {
+    line-height: 1.4em;
+  }
+  .intro-section .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding: 1em;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .intro-section .service {
+    padding: 1em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 0;
+    margin: 0 .5em;
+  }
+  .intro-section .service *:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: .5em;
+  }
+  .intro-section .service img {
+    width: 3.5em;
+    height: 3.5em;
+    margin-bottom: .5em;
   }
 }
 
