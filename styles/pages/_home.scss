@@ -164,14 +164,18 @@
 
                 & .list-item {
                     padding: .5em;
-                    margin-bottom: 1em;
                     display: flex;
+                    width: 90%;
+                    margin: auto;
+                    line-height: 1.5em;
+                    margin-bottom: 1em;
 
                     &>div {
                         padding: 0 .5em;
-                        & *:nth-child(1){
+
+                        & *:nth-child(1) {
                             font-size: 1.2em;
-                            font-weight: 800;
+                            font-weight: 900;
                             margin-bottom: .3em;
                         }
                     }
