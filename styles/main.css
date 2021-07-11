@@ -651,13 +651,13 @@ nav {
     color: black;
   }
   .landing-section .landing-container .landing-heading h1 {
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: .5em;
   }
   .landing-section .landing-container .landing-heading p {
     line-height: 1.5em;
-    margin-bottom: .5em;
-    font-size: .9em;
+    margin-bottom: .7em;
+    font-size: 1.2em;
   }
   .landing-section .landing-container .landing-heading a {
     color: #fff;
@@ -666,7 +666,7 @@ nav {
   .landing-section .landing-container .landing-heading .landing-btn {
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: .7em 1em;
+    padding: 1em 1.7em;
     background-color: #000814;
     border: 0;
   }
