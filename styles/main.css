@@ -626,6 +626,7 @@ nav {
   .intro-section .service img {
     width: 3em;
     height: 3em;
+    margin-bottom: .5em;
   }
 }
 
