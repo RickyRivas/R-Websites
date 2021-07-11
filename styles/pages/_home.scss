@@ -83,6 +83,7 @@
 
         & .intro-heading {
             padding: 1em;
+            text-align: center;
 
             & h2 {
                 margin-bottom: .5em;
@@ -110,10 +111,15 @@
             border-radius: 0px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             margin-bottom: 1em;
-            & *:nth-child(1){
+
+            & *:nth-child(1) {
                 font-size: 1.2em;
                 font-weight: 900;
                 margin-bottom: .5em;
+            }
+            & img {
+                width: 3em;
+                height: 3em;
             }
         }
     }

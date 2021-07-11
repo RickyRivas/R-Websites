@@ -589,6 +589,7 @@ nav {
   }
   .intro-section .intro-heading {
     padding: 1em;
+    text-align: center;
   }
   .intro-section .intro-heading h2 {
     margin-bottom: .5em;
@@ -621,6 +622,10 @@ nav {
     font-size: 1.2em;
     font-weight: 900;
     margin-bottom: .5em;
+  }
+  .intro-section .service img {
+    width: 3em;
+    height: 3em;
   }
 }
 
