@@ -584,6 +584,18 @@ nav {
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
   }
+  .intro-section {
+    width: 100%;
+  }
+  .intro-section .intro-heading {
+    padding: 1em;
+  }
+  .intro-section .intro-heading h2 {
+    margin-bottom: .5em;
+  }
+  .intro-section .intro-heading p {
+    line-height: 1.4em;
+  }
 }
 
 @media (min-width: 375px) {

@@ -76,6 +76,19 @@
             }
         }
     }
+    // Intro Section
+    .intro-section {
+        width: 100%;
+        & .intro-heading{
+            padding: 1em;
+            & h2{
+                margin-bottom: .5em;
+            }
+            & p {
+                line-height: 1.4em;
+            }
+        }
+    }
 }
 
 @media (min-width: 375px) {
