@@ -125,6 +125,30 @@
             }
         }
     }
+    // Pricing Section
+    .pricing-section{
+        width: 100%;
+        height: auto;
+        & .pricing-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            width: 100%;
+            padding: 1em;
+
+            & .pricing-intro{
+                font-size: 1.2em;
+                & .textcolor{
+                    color: blue;
+                }
+                
+                & img {
+                    max-width: 100%;
+                    margin-bottom: .2em;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 375px) {
