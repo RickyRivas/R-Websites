@@ -534,7 +534,6 @@ nav {
         grid-template-rows: 50vh 40vh;
     height: 100%;
     overflow: hidden;
-    padding: 1em;
   }
   .landing-section .landing-container .landing-heading {
     height: 100%;
@@ -606,7 +605,6 @@ nav {
         grid-template-rows: max-content max-content;
     height: auto;
     overflow: hidden;
-    padding: 1em;
   }
   .landing-section .landing-container .landing-heading {
     height: 100%;
