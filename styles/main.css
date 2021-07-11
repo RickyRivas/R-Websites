@@ -648,6 +648,9 @@ nav {
   .pricing-section .pricing-container .pricing-intro .textcolor {
     color: blue;
   }
+  .pricing-section .pricing-container .pricing-intro *:nth-child(2), .pricing-section .pricing-container .pricing-intro :nth-child(3) {
+    margin-bottom: .7em;
+  }
   .pricing-section .pricing-container .pricing-intro img {
     max-width: 100%;
     margin-bottom: .2em;

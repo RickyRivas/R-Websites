@@ -138,8 +138,12 @@
 
             & .pricing-intro{
                 font-size: 1.2em;
+
                 & .textcolor{
                     color: blue;
+                }
+                & *:nth-child(2), :nth-child(3){
+                    margin-bottom: .7em;
                 }
                 
                 & img {
