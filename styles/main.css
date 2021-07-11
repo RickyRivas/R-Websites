@@ -522,8 +522,6 @@ nav {
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
-    background-image: linear-gradient(90deg, #ededed, #ececec), linear-gradient(135deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%), linear-gradient(112.5deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%), linear-gradient(90deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%);
-    background-blend-mode: overlay, overlay, overlay, normal;
   }
   .landing-section .landing-container {
     position: relative;
@@ -559,14 +557,6 @@ nav {
             flex-direction: column;
     padding: 1em;
     top: 2em;
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border-radius: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: black;
   }
   .landing-section .landing-container .landing-heading h1 {
     font-size: 1.3em;
@@ -596,15 +586,13 @@ nav {
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 410px) {
   .landing-section {
     position: relative;
     height: 100vh;
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
-    background-image: linear-gradient(90deg, #ededed, #ececec), linear-gradient(135deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%), linear-gradient(112.5deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%), linear-gradient(90deg, #a37d3e 0%, #a37d3e 22%, #95643b 22%, #95643b 32%, #864b38 32%, #864b38 37%, #783235 37%, #783235 51%, #691932 51%, #691932 55%, #5b002f 55%, #5b002f 100%);
-    background-blend-mode: overlay, overlay, overlay, normal;
   }
   .landing-section .landing-container {
     position: relative;
@@ -641,14 +629,6 @@ nav {
             flex-direction: column;
     padding: 1em;
     top: 2em;
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border-radius: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: black;
   }
   .landing-section .landing-container .landing-heading h1 {
     font-size: 2em;
