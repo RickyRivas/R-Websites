@@ -76,6 +76,7 @@
         }
     }
 }
+
 @media (min-width: 410px) {
     .landing-section {
         position: relative;
@@ -87,8 +88,8 @@
             max-width: 1200px;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: max-content max-content;
-            height: auto;
+            grid-template-rows: repeat(2, 50vh);
+            place-items: center;
             overflow: hidden;
 
             // &::before {

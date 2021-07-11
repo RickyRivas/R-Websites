@@ -600,10 +600,9 @@ nav {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: max-content max-content;
-        grid-template-rows: -webkit-max-content -webkit-max-content;
-        grid-template-rows: max-content max-content;
-    height: auto;
+    -ms-grid-rows: (50vh)[2];
+        grid-template-rows: repeat(2, 50vh);
+    place-items: center;
     overflow: hidden;
   }
   .landing-section .landing-container .landing-heading {
