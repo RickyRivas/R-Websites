@@ -99,7 +99,7 @@
             max-width: 1200px;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 40vh 50vh;
+            grid-template-rows: max-content max-content;
             height: auto;
             overflow: hidden;
             padding: 1em;

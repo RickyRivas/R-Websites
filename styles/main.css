@@ -534,7 +534,7 @@ nav {
         grid-template-columns: 1fr;
     -ms-grid-rows: 50vh 40vh;
         grid-template-rows: 50vh 40vh;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     padding: 1em;
   }
@@ -599,7 +599,7 @@ nav {
 @media (min-width: 375px) {
   .landing-section {
     position: relative;
-    width: 100%;
+    height: 100vh;
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
@@ -613,9 +613,10 @@ nav {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 50vh 40vh;
-        grid-template-rows: 50vh 40vh;
-    height: 100vh;
+    -ms-grid-rows: max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content;
+    height: auto;
     overflow: hidden;
     padding: 1em;
   }
@@ -650,11 +651,11 @@ nav {
     color: black;
   }
   .landing-section .landing-container .landing-heading h1 {
-    font-size: 1.3em;
+    font-size: 1.8em;
     margin-bottom: .5em;
   }
   .landing-section .landing-container .landing-heading p {
-    line-height: 1.3em;
+    line-height: 1.5em;
     margin-bottom: .5em;
     font-size: .9em;
   }
