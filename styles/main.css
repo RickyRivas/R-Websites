@@ -1161,18 +1161,6 @@ textarea:hover {
     overflow: hidden;
     place-items: center;
   }
-  .landing-section .landing-container::before {
-    content: '';
-    background-image: url(/images/iphone12psd.png);
-    background-size: cover;
-    background-position: center;
-    left: 35%;
-    bottom: 0;
-    position: absolute;
-    z-index: 2;
-    width: 250px;
-    height: 250px;
-  }
   .landing-section .landing-container .landing-heading {
     height: 100%;
     position: relative;
@@ -1217,7 +1205,6 @@ textarea:hover {
   }
   .landing-section .landing-container img {
     width: 100%;
-    display: none;
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
@@ -1379,18 +1366,6 @@ textarea:hover {
     place-items: center;
     overflow: hidden;
   }
-  .landing-section .landing-container::before {
-    content: '';
-    background-image: url(/images/iphone12psd.png);
-    background-size: cover;
-    background-position: center;
-    left: 34%;
-    bottom: 0;
-    position: absolute;
-    z-index: 2;
-    width: 300px;
-    height: 300px;
-  }
   .landing-section .landing-container .landing-heading {
     height: 100%;
     position: relative;
@@ -1461,18 +1436,6 @@ textarea:hover {
     place-items: center;
     overflow: hidden;
   }
-  .landing-section .landing-container::before {
-    content: '';
-    background-image: url(/images/iphone12psd.png);
-    background-size: cover;
-    background-position: center;
-    left: 35%;
-    bottom: 0;
-    position: absolute;
-    z-index: 2;
-    width: 350px;
-    height: 350px;
-  }
   .landing-section .landing-container .landing-heading {
     height: 100%;
     position: relative;
@@ -1542,19 +1505,6 @@ textarea:hover {
         grid-template-rows: 40vh 60vh;
     place-items: center;
     overflow: hidden;
-  }
-  .landing-section .landing-container::before {
-    content: '';
-    background-image: url(/images/iphone12psd.png);
-    background-size: cover;
-    background-position: center;
-    left: 50%;
-    bottom: 0;
-    position: absolute;
-    z-index: 2;
-    width: 250px;
-    height: 250px;
-    display: none;
   }
   .landing-section .landing-container .landing-heading {
     height: 100%;
@@ -2021,6 +1971,79 @@ textarea:hover {
 @media (min-width: 1024px) and (max-width: 1366px) {
   .landing-section {
     height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-section {
+    position: relative;
+    height: 100vh;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .landing-section .landing-container {
+    position: relative;
+    margin: auto;
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 500px;
+        grid-template-rows: 500px;
+    place-items: center;
+    overflow: hidden;
+    height: auto;
+  }
+  .landing-section .landing-container .landing-heading {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em;
+    top: 0;
+    height: 100%;
+  }
+  .landing-section .landing-container .landing-heading h1 {
+    font-size: 2.4em;
+    margin-bottom: .5em;
+  }
+  .landing-section .landing-container .landing-heading p {
+    line-height: 1.5em;
+    margin-bottom: .7em;
+    font-size: 1.2em;
+  }
+  .landing-section .landing-container .landing-heading a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .landing-section .landing-container .landing-heading .landing-btn {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em 1.7em;
+    background-color: #000814;
+    border: 0;
+  }
+  .landing-section .landing-container img {
+    width: 100%;
+  }
+  .landing-section .landing-container .landing-icon {
+    font-size: 1.5em;
   }
 }
 

@@ -22,18 +22,18 @@
             overflow: hidden;
             place-items: center;
 
-            &::before {
-                content: '';
-                background-image: url(/images/iphone12psd.png);
-                background-size: cover;
-                background-position: center;
-                left: 35%;
-                bottom: 0;
-                position: absolute;
-                z-index: 2;
-                width: 250px;
-                height: 250px;
-            }
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 35%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            // }
 
             & .landing-heading {
                 height: 100%;
@@ -73,7 +73,6 @@
 
             & img {
                 width: 100%;
-                display: none;
             }
 
             & .landing-icon {
@@ -250,18 +249,18 @@
             place-items: center;
             overflow: hidden;
 
-            &::before {
-                content: '';
-                background-image: url(/images/iphone12psd.png);
-                background-size: cover;
-                background-position: center;
-                left: 34%;
-                bottom: 0;
-                position: absolute;
-                z-index: 2;
-                width: 300px;
-                height: 300px;
-            }
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 34%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 300px;
+            //     height: 300px;
+            // }
 
             & .landing-heading {
                 height: 100%;
@@ -325,18 +324,18 @@
             place-items: center;
             overflow: hidden;
 
-            &::before {
-                content: '';
-                background-image: url(/images/iphone12psd.png);
-                background-size: cover;
-                background-position: center;
-                left: 35%;
-                bottom: 0;
-                position: absolute;
-                z-index: 2;
-                width: 350px;
-                height: 350px;
-            }
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 35%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 350px;
+            //     height: 350px;
+            // }
 
             & .landing-heading {
                 height: 100%;
@@ -400,19 +399,19 @@
             place-items: center;
             overflow: hidden;
 
-            &::before {
-                content: '';
-                background-image: url(/images/iphone12psd.png);
-                background-size: cover;
-                background-position: center;
-                left: 50%;
-                bottom: 0;
-                position: absolute;
-                z-index: 2;
-                width: 250px;
-                height: 250px;
-                display: none;
-            }
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 50%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            //     display: none;
+            // }
 
             & .landing-heading {
                 height: 100%;
@@ -903,7 +902,84 @@
         height: auto;
     }
 }
+@media (min-width: 1200px){
+    .landing-section {
+        position: relative;
+        height: 100vh;
+        min-height: max-content;
+        display: grid;
+        place-items: center;
 
+        & .landing-container {
+            position: relative;
+            margin: auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 500px;
+            place-items: center;
+            overflow: hidden;
+            height: auto;
+
+            // &::before {
+            //     content: '';
+            //     background-image: url(/images/iphone12psd.png);
+            //     background-size: cover;
+            //     background-position: center;
+            //     left: 50%;
+            //     bottom: 0;
+            //     position: absolute;
+            //     z-index: 2;
+            //     width: 250px;
+            //     height: 250px;
+            // }
+
+            & .landing-heading {
+                height: max-content;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 1em;
+                top: 0;
+                height: 100%;
+
+                & h1 {
+                    font-size: 2.4em;
+                    margin-bottom: .5em;
+                }
+
+                & p {
+                    line-height: 1.5em;
+                    margin-bottom: .7em;
+                    font-size: 1.2em;
+                }
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                & .landing-btn {
+                    box-shadow: $box-shadow;
+                    padding: 1em 1.7em;
+                    background-color: $black;
+                    border: 0;
+
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+
+            & .landing-icon {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+}
 @media (min-width: 1350px) {
 
     // Pricing Section
