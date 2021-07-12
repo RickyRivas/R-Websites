@@ -868,8 +868,7 @@
 
         & .portfolio-container {
             padding: 1em;
-            max-width: 1200px;
-            width: 80%;
+            max-width: 1200px; 
             margin: auto;
 
 
@@ -880,7 +879,7 @@
 
             & .portfolio-cards {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: auto;
 
             }
@@ -906,6 +905,7 @@
             width: 100%;
             max-width: max-content;
             margin: auto;
+            max-width: 1200px;
 
             & .pricing-intro {
                 padding: 1em;

@@ -774,14 +774,14 @@ nav {
   width: 100%;
 }
 
-.subscription-container {
+.subscriptions-container {
   padding: 1em;
   margin: auto;
   max-width: 1200px;
 }
 
 .sub-heading {
-  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .pricing-card {
@@ -801,9 +801,10 @@ nav {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   margin: 0 1em 1em 1em;
+  padding-bottom: .5em;
 }
 
-.pricing-cards {
+.subs-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,7 +927,7 @@ nav {
     -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
             box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   }
-  .pricing-cards {
+  .subs-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -992,6 +993,63 @@ nav {
     background: -webkit-gradient(linear, left top, right top, from(#bf953f), color-stop(#fcf6ba), color-stop(#b38728), to(#aa771c));
     background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #aa771c);
     border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subs-cards {
+    padding: 0;
+  }
+  .pricing-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 350px;
+    border-radius: 0.5rem;
+    height: 500px;
+    margin-bottom: 1em;
+    -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin: 0;
+  }
+  .gold-pricing-card {
+    z-index: 3;
+    background-color: white;
+  }
+  .subs-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1em;
+    margin: auto;
+  }
+  .pricing-card-heading {
+    font-weight: 300;
+    width: 100%;
+    height: 3rem;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5em;
+  }
+  .pricing-card-heading button {
+    color: black;
   }
 }
 
@@ -1795,7 +1853,6 @@ nav {
   .portfolio-section .portfolio-container {
     padding: 1em;
     max-width: 1200px;
-    width: 80%;
     margin: auto;
   }
   .portfolio-section .portfolio-container .portfolio-heading {
@@ -1804,8 +1861,8 @@ nav {
   .portfolio-section .portfolio-container .portfolio-cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
@@ -1830,6 +1887,7 @@ nav {
     max-width: -moz-max-content;
     max-width: max-content;
     margin: auto;
+    max-width: 1200px;
   }
   .pricing-section .pricing-container .pricing-intro {
     padding: 1em;
