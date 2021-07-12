@@ -11,7 +11,6 @@
 
 .sub-heading {
     padding: 1em;
-    margin: auto;
 }
 
 .pricing-card {
@@ -21,11 +20,11 @@
     max-width: 325px;
     border-radius: 1rem;
     height: 400px;
-    background-color: #fff;
     background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
-     border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 0 1em 1em 1em;
 }
 
 .pricing-cards {
@@ -97,22 +96,18 @@
     text-align: center;
 }
 
-.pricing-card-btn {
-    width: 9em;
-    height: 2.5em;
-    border-radius: 5px;
-    background-color: #fff;
-    border: none;
-    margin: 1em;
-    border: 1px solid #c9d1d8;
-
-    &:hover {
-        background-color: white;
-    }
-}
 
 .pm {
     font-size: 0.5em;
+}
+
+.standard-btn {
+    box-shadow: $box-shadow;
+    padding: .7em 1em;
+    background-color: $black;
+    border: 0;
+    color: white;
+
 }
 
 @media (min-width: 1000px) {
