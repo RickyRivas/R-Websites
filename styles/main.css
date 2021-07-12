@@ -1079,6 +1079,18 @@ nav {
     overflow: hidden;
     place-items: center;
   }
+  .landing-section .landing-container::before {
+    content: '';
+    background-image: url(/images/iphone12psd.png);
+    background-size: cover;
+    background-position: center;
+    left: 35%;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+  }
   .landing-section .landing-container .landing-heading {
     height: 100%;
     position: relative;
@@ -1123,6 +1135,7 @@ nav {
   }
   .landing-section .landing-container img {
     width: 100%;
+    display: none;
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
@@ -1284,6 +1297,18 @@ nav {
     place-items: center;
     overflow: hidden;
   }
+  .landing-section .landing-container::before {
+    content: '';
+    background-image: url(/images/iphone12psd.png);
+    background-size: cover;
+    background-position: center;
+    left: 34%;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+  }
   .landing-section .landing-container .landing-heading {
     height: 100%;
     position: relative;
@@ -1353,6 +1378,18 @@ nav {
         grid-template-rows: 40vh 50vh;
     place-items: center;
     overflow: hidden;
+  }
+  .landing-section .landing-container::before {
+    content: '';
+    background-image: url(/images/iphone12psd.png);
+    background-size: cover;
+    background-position: center;
+    left: 35%;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    width: 350px;
+    height: 350px;
   }
   .landing-section .landing-container .landing-heading {
     height: 100%;
