@@ -797,6 +797,12 @@ nav {
     width: 2.3em;
     height: 2.3em;
   }
+  .portfolio-section {
+    width: 100%;
+  }
+  .portfolio-section .portfolio-container {
+    padding: 1em;
+  }
 }
 
 @media (min-width: 375px) {

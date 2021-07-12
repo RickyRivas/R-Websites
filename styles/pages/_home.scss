@@ -206,6 +206,18 @@
             }
         }
     }
+
+    .portfolio-section {
+        width: 100%;
+
+        & .portfolio-container {
+            padding: 1em;
+
+            & .portfolio-heading {
+                
+            }
+        }
+    }
 }
 
 @media (min-width: 375px) {
@@ -881,7 +893,8 @@
                     width: 70%;
                     margin-bottom: .2em;
                 }
-                & .pricing-plan{
+
+                & .pricing-plan {
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
