@@ -619,6 +619,7 @@ nav {
   max-width: 300px;
   width: 100%;
   margin: auto;
+  margin-bottom: 1em;
 }
 
 .port-card-body {
