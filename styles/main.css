@@ -1090,6 +1090,7 @@ input[type="text"] {
   border: 0;
   outline: none;
   padding: 12px 20px;
+  border-radius: unset;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1110,6 +1111,7 @@ input[type="email"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid #c9d1d8;
+  border-radius: unset;
 }
 
 input[type="email"]:hover {
@@ -1122,6 +1124,7 @@ textarea {
           box-sizing: border-box;
   outline: none;
   border: none;
+  border-radius: unset;
   resize: none;
   width: 100%;
   padding: 18px;
