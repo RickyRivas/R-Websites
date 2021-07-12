@@ -738,6 +738,8 @@
     // Intro Section
     .intro-section {
         width: 100%;
+        margin-top: 1em;
+        margin-bottom: 2em;
 
         & .intro-heading {
             padding: 1em;
@@ -824,6 +826,12 @@
                 & img {
                     max-width: 100%;
                     margin-bottom: .2em;
+                }
+                    & .pricing-plan {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
                 }
             }
 
@@ -990,7 +998,7 @@
         & .portfolio-container {
             padding: 1em;
             max-width: 1200px;
-            width: 80%;
+            width: 100%;
             margin: auto;
 
 

@@ -1857,6 +1857,8 @@ textarea:hover {
   }
   .intro-section {
     width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
   .intro-section .intro-heading {
     padding: 1em;
@@ -1942,6 +1944,21 @@ textarea:hover {
   .pricing-section .pricing-container .pricing-intro img {
     max-width: 100%;
     margin-bottom: .2em;
+  }
+  .pricing-section .pricing-container .pricing-intro .pricing-plan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .pricing-section .pricing-container .list-items {
     display: -ms-grid;
@@ -2101,7 +2118,7 @@ textarea:hover {
   .portfolio-section .portfolio-container {
     padding: 1em;
     max-width: 1200px;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .portfolio-section .portfolio-container .portfolio-heading {
