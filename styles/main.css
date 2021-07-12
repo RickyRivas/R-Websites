@@ -715,23 +715,25 @@ nav {
        object-fit: cover;
   }
   .tag {
-    background-color: #fff;
+    background-color: #000;
     border-radius: 50px;
     font-size: 12px;
     margin: 0;
-    color: #000;
+    color: #fff;
     border: 1px solid #000;
     padding: 2px 10px;
     text-transform: uppercase;
   }
   .port-card-body h4 {
     margin: 10px 0;
+    font-size: 1.4em;
   }
   .port-card-body {
     font-size: 13px;
   }
   .port-card-body p {
     margin-bottom: .8em;
+    font-size: 1.2em;
   }
   .user {
     display: -webkit-box;
