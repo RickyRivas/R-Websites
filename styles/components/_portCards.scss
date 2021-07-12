@@ -3,15 +3,16 @@
   border-radius: 10px;
   box-shadow: $box-shadow;
   overflow: hidden;
-  width: 300px;
+  max-width: 300px;
   width: 100%;
+  margin: auto;
 }
 .port-card-body {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 20px;
-  min-height: 250px;
+  min-height: 220px;
 }
 .port-card-header img {
   width: 100%;
@@ -34,7 +35,9 @@
 }
 .port-card-body {
   font-size: 13px;
-  margin: 0 0 40px;
+  & p {
+      margin-bottom: .8em;
+  }
 }
 .user {
   display: flex;

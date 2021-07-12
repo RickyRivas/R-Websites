@@ -616,8 +616,9 @@ nav {
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
-  width: 300px;
+  max-width: 300px;
   width: 100%;
+  margin: auto;
 }
 
 .port-card-body {
@@ -632,7 +633,7 @@ nav {
       -ms-flex-align: start;
           align-items: start;
   padding: 20px;
-  min-height: 250px;
+  min-height: 220px;
 }
 
 .port-card-header img {
@@ -659,7 +660,10 @@ nav {
 
 .port-card-body {
   font-size: 13px;
-  margin: 0 0 40px;
+}
+
+.port-card-body p {
+  margin-bottom: .8em;
 }
 
 .user {
@@ -876,6 +880,9 @@ nav {
   }
   .portfolio-section .portfolio-container {
     padding: 1em;
+  }
+  .portfolio-section .portfolio-container .portfolio-heading {
+    margin-bottom: 1em;
   }
 }
 
