@@ -400,18 +400,19 @@
             place-items: center;
             overflow: hidden;
 
-            // &::before {
-            //     content: '';
-            //     background-image: url(/images/iphone12psd.png);
-            //     background-size: cover;
-            //     background-position: center;
-            //     left: 50%;
-            //     bottom: 0;
-            //     position: absolute;
-            //     z-index: 2;
-            //     width: 250px;
-            //     height: 250px;
-            // }
+            &::before {
+                content: '';
+                background-image: url(/images/iphone12psd.png);
+                background-size: cover;
+                background-position: center;
+                left: 50%;
+                bottom: 0;
+                position: absolute;
+                z-index: 2;
+                width: 250px;
+                height: 250px;
+                display: none;
+            }
 
             & .landing-heading {
                 height: 100%;
@@ -451,6 +452,7 @@
 
             & img {
                 width: 100%;
+                display: block;
             }
 
             & .landing-icon {
