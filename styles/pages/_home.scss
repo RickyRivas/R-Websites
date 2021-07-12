@@ -198,8 +198,8 @@
 
                         content: url(/images/check.svg);
                         margin-top: .1em;
-                        width: 2.3em;
-                        height: 2.3em;
+                        min-width: 23px;
+                        min-height: 23px
                     }
 
                 }
