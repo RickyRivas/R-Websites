@@ -64,6 +64,11 @@
         </a>
         <!-- Landing Start -->
         <section class='landing-section'>
+            <canvas id="gradient-canvas" data-js-darken-top data-transition-in>
+                <!--
+            Remove data-js-darken-top to keep the same brightness in the upper part of the canvas
+          -->
+            </canvas>
             <div class='landing-container'>
                 <div class='landing-heading'>
                     <h1>Small Business Web <br> Development & Design</h1>
@@ -468,7 +473,7 @@
     <!-- Main End -->
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
-    <script src='scripts/stripe.js'></script>
+    <script src='scripts/gradient.js'></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
