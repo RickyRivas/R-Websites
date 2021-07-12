@@ -5,20 +5,11 @@
 .subscription-container {
   padding: 1em;
   margin: auto;
+  max-width: 1200px;
 }
 .sub-heading {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 10em;
   padding: 1em;
   margin: auto;
-  max-width: 1000px;
-  & button {
-    color: black;
-  }
 }
 
 .pricing-card {
