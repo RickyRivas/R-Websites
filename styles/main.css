@@ -1149,10 +1149,6 @@ textarea:hover {
 
 /* Main Container CSS */
 @media (min-width: 0px) {
-  body {
-    background-image: repeating-linear-gradient(0deg, rgba(219, 219, 219, 0.2) 0px, rgba(219, 219, 219, 0.2) 1px, transparent 1px, transparent 21px), repeating-linear-gradient(90deg, rgba(219, 219, 219, 0.2) 0px, rgba(219, 219, 219, 0.2) 1px, transparent 1px, transparent 21px), -webkit-gradient(linear, left top, right top, from(white), to(white));
-    background-image: repeating-linear-gradient(0deg, rgba(219, 219, 219, 0.2) 0px, rgba(219, 219, 219, 0.2) 1px, transparent 1px, transparent 21px), repeating-linear-gradient(90deg, rgba(219, 219, 219, 0.2) 0px, rgba(219, 219, 219, 0.2) 1px, transparent 1px, transparent 21px), linear-gradient(90deg, white, white);
-  }
   .landing-section {
     position: relative;
     width: 100%;
@@ -1161,8 +1157,6 @@ textarea:hover {
     min-height: max-content;
     z-index: 2;
     background: rgba(255, 255, 255, 0.7);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
