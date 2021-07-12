@@ -1140,10 +1140,10 @@ textarea:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  --gradient-color-1: #ef008f;
-  --gradient-color-2: #6ec3f4;
-  --gradient-color-3: #7038ff;
-  --gradient-color-4: #ffba27;
+  --gradient-color-1: #ffc300;
+  --gradient-color-2: #fff;
+  --gradient-color-3: #fff;
+  --gradient-color-4: #fff;
   z-index: -1;
 }
 
@@ -1160,6 +1160,12 @@ textarea:hover {
     min-height: -moz-max-content;
     min-height: max-content;
     z-index: 2;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
   }
   .landing-section .landing-container {
     position: relative;
