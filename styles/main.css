@@ -406,7 +406,8 @@ nav {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #000814;
+  background-image: radial-gradient(circle at center center, transparent, #212121), repeating-linear-gradient(135deg, #212121 0px, #212121 2px, transparent 2px, transparent 10px, #212121 10px, #212121 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, #2f2f2f 0px, #2f2f2f 4px, transparent 4px, transparent 8px), -webkit-gradient(linear, left top, right top, from(#212121), to(#212121));
+  background-image: radial-gradient(circle at center center, transparent, #212121), repeating-linear-gradient(135deg, #212121 0px, #212121 2px, transparent 2px, transparent 10px, #212121 10px, #212121 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, #2f2f2f 0px, #2f2f2f 4px, transparent 4px, transparent 8px), linear-gradient(90deg, #212121, #212121);
 }
 
 .footer .col {
