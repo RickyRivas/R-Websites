@@ -1414,10 +1414,6 @@ textarea:hover {
   }
   .pricing-section .pricing-container .pricing-intro img {
     max-width: 100%;
-    margin-bottom: .2em;
-    border-radius: .5em;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .pricing-section .pricing-container .pricing-intro .pricing-plan {
     height: 100%;
