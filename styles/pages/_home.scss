@@ -109,12 +109,6 @@
         & .service {
             padding: 1em;
             text-align: center;
-            background: rgba(255, 255, 255, 0.10);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(5.0px);
-            -webkit-backdrop-filter: blur(5.0px);
-            border-radius: 0px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
             margin-bottom: 1em;
             height: 209px;
             height: auto;
@@ -123,6 +117,15 @@
                 font-size: 1.2em;
                 font-weight: 900;
                 margin-bottom: .5em;
+            }
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.10);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(5.0px);
+                -webkit-backdrop-filter: blur(5.0px);
+                border-radius: .5em;
+                transition: all .5s;
             }
 
             & img {
