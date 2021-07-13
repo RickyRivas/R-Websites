@@ -21,3 +21,49 @@
     }
 
 }
+@media (min-width: 768px){
+        .standard-landing {
+        height: 25vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        flex-direction: column;
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/images/tulsa.jpg);
+        background-size: cover;
+        background-position: center 10%;
+        border: 0;
+        color: white;
+        padding: 1em;
+        & .standard-heading{
+            text-align: left;
+            & h1 {
+                margin-bottom: .5em;
+            }
+        }
+    }
+
+}
+@media (min-width: 1024px){
+        .standard-landing {
+        height: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        flex-direction: column;
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/images/tulsa.jpg);
+        background-size: cover;
+        background-position: center 10%;
+        border: 0;
+        color: white;
+        padding: 1em;
+        & .standard-heading{
+            text-align: left;
+            & h1 {
+                margin-bottom: .5em;
+            }
+        }
+    }
+
+}
