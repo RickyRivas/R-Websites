@@ -1088,7 +1088,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 400px;
-  height: 500px;
+  height: auto;
   padding: 16px;
   background-color: #fff;
   border-radius: 8px;
