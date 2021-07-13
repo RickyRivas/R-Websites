@@ -2231,10 +2231,4 @@ textarea:hover {
         grid-template-rows: auto;
   }
 }
-
-@media (min-width: 0px) {
-  .contact-section {
-    padding: 1em;
-  }
-}
 /*# sourceMappingURL=main.css.map */
