@@ -1157,7 +1157,7 @@ textarea:hover {
 
 @media (min-width: 0px) {
   .standard-landing {
-    height: 30vw;
+    height: 34vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1172,7 +1172,10 @@ textarea:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: black;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/tulsa.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/tulsa.jpg);
+    background-size: cover;
+    background-position: center 10%;
     border: 0;
     color: white;
     padding: 1em;
