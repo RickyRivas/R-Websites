@@ -4,10 +4,17 @@
         border-radius: 10px;
         box-shadow: $box-shadow;
         overflow: hidden;
+        position: relative;
         max-width: 300px;
         width: 100%;
         margin: auto;
         margin-bottom: 1em;
+        & .standard-icon {
+            position: absolute;
+            right: 1em;
+            bottom: 1em;
+            width: 20px;
+        }
     }
 
     .port-card-body {
