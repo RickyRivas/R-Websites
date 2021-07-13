@@ -165,7 +165,7 @@ nav {
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 40px;
-  height: 1.5px;
+  height: 3px;
   background-color: #000;
   border-radius: 4px;
   position: absolute;
@@ -1260,6 +1260,7 @@ textarea:hover {
     border: 1px solid rgba(255, 255, 255, 0.18);
     margin-bottom: 1em;
     height: 209px;
+    height: auto;
   }
   .intro-section .service *:nth-child(2) {
     font-size: 1.2em;
@@ -1427,6 +1428,7 @@ textarea:hover {
   }
   .landing-section .landing-container img {
     width: 100%;
+    display: none;
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
@@ -1567,7 +1569,6 @@ textarea:hover {
   }
   .landing-section .landing-container img {
     width: 100%;
-    display: block;
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
@@ -1607,6 +1608,7 @@ textarea:hover {
     border-radius: 0px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     margin-bottom: 1em;
+    height: auto;
   }
   .intro-section .service *:nth-child(2) {
     font-size: 1.2em;
