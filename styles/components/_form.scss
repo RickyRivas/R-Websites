@@ -5,6 +5,9 @@
 .contact-container {
   max-width: 1000;
   padding: 1em;
+  & h1 {
+    margin-bottom: .5em;
+  }
 }
 .contact-form {
   margin: auto;

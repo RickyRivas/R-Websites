@@ -1073,6 +1073,10 @@ nav {
   padding: 1em;
 }
 
+.contact-container h1 {
+  margin-bottom: .5em;
+}
+
 .contact-form {
   margin: auto;
   display: -webkit-box;
