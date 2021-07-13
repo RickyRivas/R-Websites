@@ -1157,45 +1157,31 @@ textarea:hover {
 
 @media (min-width: 0px) {
   .standard-landing {
-    height: 40vw;
+    height: 30vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: black;
     border: 0;
     color: white;
+    padding: 1em;
   }
-  .custom-shape-divider-bottom-1626144621 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  .standard-landing .standard-heading {
+    text-align: left;
   }
-  .custom-shape-divider-bottom-1626144621 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-  }
-  .custom-shape-divider-bottom-1626144621 .shape-fill {
-    fill: #fff;
-  }
-  /** For mobile devices **/
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .custom-shape-divider-bottom-1626144621 svg {
-    width: calc(100% + 1.3px);
-    height: 72px;
+  .standard-landing .standard-heading h1 {
+    margin-bottom: .5em;
   }
 }
 
