@@ -1,5 +1,6 @@
 .top-link{
     display: none;
+color: white;
 }
 @media (max-width: 1024px){
 .top-link {
@@ -15,7 +16,7 @@
   padding: 1px;
   width: 100%;
   height: 60px;
-  background: greenyellow;
+  background: $black;
 
   &.show {
     visibility: visible;
