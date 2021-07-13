@@ -919,6 +919,8 @@ nav {
 
 .standard-btn:hover {
   background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 @media (min-width: 1000px) {
@@ -1219,6 +1221,12 @@ textarea:hover {
     padding: .7em 1em;
     background-color: #000814;
     border: 0;
+    cursor: pointer;
+  }
+  .landing-section .landing-container .landing-heading .landing-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   .landing-section .landing-container img {
     width: 100%;
@@ -1295,7 +1303,7 @@ textarea:hover {
     font-size: 1.2em;
   }
   .pricing-section .pricing-container .pricing-intro .textcolor {
-    color: blue;
+    color: crimson;
   }
   .pricing-section .pricing-container .pricing-intro *:nth-child(2),
   .pricing-section .pricing-container .pricing-intro :nth-child(3) {
@@ -1304,13 +1312,17 @@ textarea:hover {
   .pricing-section .pricing-container .pricing-intro img {
     max-width: 100%;
     margin-bottom: .2em;
+    border-radius: .5em;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .pricing-section .pricing-container .pricing-intro .pricing-plan {
     height: 100%;
   }
-  .pricing-section .pricing-container .pricing-intro .pricing-plan p {
+  .pricing-section .pricing-container .pricing-intro .p1 {
     margin-bottom: .5em;
-    font-size: 1.2em;
+    font-weight: 800;
+    font-size: 1.1em;
   }
   .pricing-section .pricing-container .list-items {
     display: -ms-grid;
