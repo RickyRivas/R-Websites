@@ -109,7 +109,10 @@
     border: 0;
     color: white;
     text-align: center;
-
+    cursor: pointer;
+        &:hover{
+            background-color: rgba(0,0,0,.7);
+        }
 }
 
 @media (min-width: 1000px) {

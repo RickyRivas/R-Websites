@@ -8,11 +8,9 @@
         position: relative;
         width: 100%;
         min-height: max-content;
-        z-index: 2;
-        background: rgba(255, 255, 255, 0.70);
-        backdrop-filter: blur(5.0px);
-        -webkit-backdrop-filter: blur(5.0px);
-        border-radius: 10px;
+        background-image: url(/images/landingdemo.png);
+        background-size: cover;
+        background-position: center;
 
         & .landing-container {
             position: relative;
@@ -75,6 +73,7 @@
 
             & img {
                 width: 100%;
+                display: none;
             }
 
             & .landing-icon {

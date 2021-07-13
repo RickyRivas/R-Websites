@@ -913,6 +913,11 @@ nav {
   border: 0;
   color: white;
   text-align: center;
+  cursor: pointer;
+}
+
+.standard-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 1000px) {
@@ -1155,11 +1160,9 @@ textarea:hover {
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 10px;
+    background-image: url(/images/landingdemo.png);
+    background-size: cover;
+    background-position: center;
   }
   .landing-section .landing-container {
     position: relative;
@@ -1218,6 +1221,7 @@ textarea:hover {
   }
   .landing-section .landing-container img {
     width: 100%;
+    display: none;
   }
   .landing-section .landing-container .landing-icon {
     font-size: 1.5em;
