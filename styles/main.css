@@ -1275,9 +1275,6 @@ textarea:hover {
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
-    background-image: url(/images/landingdemo.png);
-    background-size: cover;
-    background-position: center;
   }
   .landing-section .landing-container {
     position: relative;
