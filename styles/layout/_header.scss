@@ -1,73 +1,403 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-/* Navigation Scss */
-body {
-  background-color: #fff;
+
+@media (min-width: 0px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .hamburger.hamburger--spring {
+    display: block;
+    box-shadow: none;
+    z-index: 100;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+
+    & .is-active {
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      z-index: 100;
+    }
+
+    & .nav-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      border: 0;
+      height: 8vh;
+      padding: 0.5em;
+      width: 100%;
+
+
+
+      .nav-links {
+        margin: 0;
+        position: fixed;
+        z-index: 100;
+        right: 0px;
+        height: 100vh;
+        width: 80%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        background-color: #fff;
+        list-style: none;
+
+        & li {
+          opacity: 1;
+          padding: .5em 1em;
+          text-align: right;
+          width: 90%;
+          font-weight: unset;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-size: 1.2em;
+
+          &::after {
+            content: url(/images/left-chevron.svg);
+            width: 1em;
+            height: 1em;
+            margin-left: .5em;
+            align-self: center;
+            justify-self: center;
+          }
+
+          & a {
+            color: black;
+            text-decoration: none;
+          }
+
+        }
+
+        & li:nth-child(1) {
+          margin-top: 3em;
+        }
+
+        &.is-active {
+          transform: translate(0%);
+        }
+      }
+    }
+  }
+
+  // Keyframes Animation for NAV
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  //
 }
 
-nav {
-  z-index: 1000;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-  width: 100vw;
-  background-color: transparent;
-}
+@media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50vw;
-  margin: 1em;
-}
+  .hamburger.hamburger--spring {
+    display: block;
+    box-shadow: none;
+    z-index: 100;
+  }
 
-.nav-links li {
-  list-style: none;
-  padding: 5px;
-}
+  nav {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.nav-links li:nth-child(1) {
-  border-bottom: 1px solid #000;
-}
+    & .is-active {
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      z-index: 100;
+    }
 
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-}
+    & .nav-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      border: 0;
+      height: 8vh;
+      padding: 0.5em;
+      width: 100%;
 
-.nav-links li:hover {
-  border-bottom: 1px solid #000;
-}
 
-.hamburger.hamburger--spring {
-  display: none;
-}
 
-.logo {
-  width: auto;
-  margin: 1em;
-  font-size: 1.2em;
-  font-weight: 100;
-  & a {
-    color: black;
-    text-decoration: none;
+      .nav-links {
+        margin: 0;
+        position: fixed;
+        z-index: 100;
+        right: 0px;
+        height: 100vh;
+        width: 80%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        background-color: #fff;
+        list-style: none;
+
+        & li {
+          opacity: 1;
+          padding: .5em 1em;
+          text-align: right;
+          width: 90%;
+          font-weight: unset;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-size: 1.2em;
+
+          &::after {
+            content: url(/images/left-chevron.svg);
+            width: 1em;
+            height: 1em;
+            margin-left: .5em;
+            align-self: center;
+            justify-self: center;
+          }
+
+          & a {
+            color: black;
+            text-decoration: none;
+          }
+
+        }
+
+        & li:nth-child(1) {
+          margin-top: 3em;
+        }
+
+        &.is-active {
+          transform: translate(0%);
+        }
+      }
+    }
   }
 }
 
-.nav-menu-logo {
-  display: none;
-  color: #fff;
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .hamburger.hamburger--spring {
+    display: none;
+    box-shadow: none;
+    z-index: 100;
+  }
+
+  nav {
+    z-index: 5;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+
+    & .is-active {
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      z-index: 100;
+    }
+
+    & .nav-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      border: 0;
+      padding: 0 1em;
+      width: 100%;
+      z-index: 1000;
+      height: 100%;
+      max-width: 1200px;
+      margin: auto;
+
+
+      .nav-links {
+        margin: 0;
+        position: relative;
+        z-index: 100;
+        right: unset;
+        height: auto;
+        top: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transform: unset;
+        transition: unset;
+        background-color: transparent;
+        list-style: none;
+        width: auto;
+
+        & li {
+          opacity: 1;
+          padding: .5em;
+          text-align: right;
+          width: 90%;
+          font-weight: unset;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-size: 1em;
+
+          &::after {
+            content: url(/images/left-chevron.svg);
+            width: 1em;
+            height: 1em;
+            margin-left: .5em;
+            align-self: center;
+            justify-self: center;
+            display: none;
+          }
+
+          & a {
+            color: black;
+            text-decoration: none;
+          }
+
+        }
+
+        & li:nth-child(1) {
+          margin-top: 0em;
+        }
+
+        &.is-active {
+          transform: translate(0%);
+        }
+      }
+    }
+  }
 }
 
-.nav-icon {
-  display: none;
-}
+@media (min-width: 1200px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
 
-/* burger css */
+  .hamburger.hamburger--spring {
+    display: none;
+    box-shadow: none;
+    z-index: 100;
+  }
+
+  nav {
+    z-index: 5;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+
+    & .is-active {
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      z-index: 100;
+    }
+
+    & .nav-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      border: 0;
+      padding: 0;
+      width: 100%;
+      z-index: 1000;
+      height: 100%;
+      max-width: 1200px;
+      margin: auto;
+
+
+      .nav-links {
+        margin: 0;
+        position: relative;
+        z-index: 100;
+        right: unset;
+        height: auto;
+        top: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transform: unset;
+        transition: unset;
+        background-color: transparent;
+        list-style: none;
+        width: auto;
+
+        & li {
+          opacity: 1;
+          padding: .5em;
+          text-align: right;
+          width: 90%;
+          font-weight: unset;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-size: 1em;
+
+          &::after {
+            content: url(/images/left-chevron.svg);
+            width: 1em;
+            height: 1em;
+            margin-left: .5em;
+            align-self: center;
+            justify-self: center;
+            display: none;
+          }
+
+          & a {
+            color: black;
+            text-decoration: none;
+          }
+
+        }
+
+        & li:nth-child(1) {
+          margin-top: 0em;
+        }
+
+        &.is-active {
+          transform: translate(0%);
+        }
+      }
+    }
+  }
+}
+// Navigation Css
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -91,7 +421,6 @@ nav {
 .hamburger.is-active:hover {
   opacity: 0.7;
   border: none;
-  box-shadow: none;
 }
 
 .hamburger.is-active .hamburger-inner,
@@ -177,129 +506,4 @@ nav {
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(-45deg);
-}
-
-/* media queries */
-@media screen and (max-width: 1024px) {
-  body {
-    display: block;
-    overflow-x: hidden;
-  }
-
-  .hamburger.hamburger--spring {
-    display: block;
-    box-shadow: none;
-  }
-
-  nav {
-    position: fixed;
-    z-index: 1000;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    box-shadow: none;
-    border: 0;
-    height: 6vh;
-    padding: 0.5em;
-
-    & .is-active {
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    }
-  }
-
-  .nav-links {
-    margin: 0;
-    position: fixed;
-    z-index: 0;
-    width: 75%;
-    right: 0px;
-    height: 100vh;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    background-color: #fff;
-  }
-
-  .nav-links li {
-    opacity: 0;
-    padding: 0.5em 2em;
-    font-size: 1.2em;
-    text-align: left;
-    font-weight: 300;
-    color: black;
-    margin: 0.3em;
-    width: 85%;
-  }
-
-  .nav-links li a {
-    color: black;
-  }
-
-  .nav-links li:nth-child(1) {
-    margin-top: 3em;
-    border-bottom: 1px solid black;
-  }
-
-  .nav-links li:hover {
-    border-bottom: 1px solid #000;
-  }
-
-  .logo {
-    display: none;
-    z-index: 100;
-    font-weight: 100;
-    margin: 0;
-    width: auto;
-    color: black;
-  }
-
-  .is-active {
-    transform: translateX(0%);
-
-  }
-
-  .nav-menu-logo {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 2em;
-    color: #fff;
-    margin: auto;
-  }
-
-  .social-media-icons {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    bottom: 4em;
-
-    padding: 1em;
-  }
-
-  .nav-icon {
-    display: block;
-    width: 2em;
-  }
-
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
 }
