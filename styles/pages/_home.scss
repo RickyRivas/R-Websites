@@ -31,11 +31,21 @@
 
                 & span {
                     margin-bottom: 0px;
+
                 }
 
                 & h1 {
                     margin-bottom: 10px;
-                    font-size: 2em;
+
+                }
+
+            }
+
+            & .landing-imgs {
+                padding: 1em;
+
+                & img {
+                    max-width: 100%;
                 }
 
                 & .btns {
@@ -44,16 +54,8 @@
                     align-items: center;
 
                     & a {
-                        margin-right: 10px;
+                      
                     }
-                }
-            }
-
-            & .landing-imgs {
-                padding: 1em;
-
-                & img {
-                    max-width: 100%;
                 }
             }
 

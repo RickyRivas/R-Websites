@@ -1591,9 +1591,14 @@ textarea:hover {
   }
   .landing-section .landing-container .landing-intro h1 {
     margin-bottom: 10px;
-    font-size: 2em;
   }
-  .landing-section .landing-container .landing-intro .btns {
+  .landing-section .landing-container .landing-imgs {
+    padding: 1em;
+  }
+  .landing-section .landing-container .landing-imgs img {
+    max-width: 100%;
+  }
+  .landing-section .landing-container .landing-imgs .btns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1603,15 +1608,6 @@ textarea:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .landing-section .landing-container .landing-intro .btns a {
-    margin-right: 10px;
-  }
-  .landing-section .landing-container .landing-imgs {
-    padding: 1em;
-  }
-  .landing-section .landing-container .landing-imgs img {
-    max-width: 100%;
   }
   .intro-section {
     width: 100%;
