@@ -200,9 +200,9 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -321,9 +321,9 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -444,9 +444,9 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1439,9 +1439,9 @@ textarea:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1454,12 +1454,6 @@ textarea:hover {
     border: 0;
     color: white;
     padding: 1em;
-  }
-  .standard-landing .standard-heading {
-    text-align: left;
-  }
-  .standard-landing .standard-heading h1 {
-    margin-bottom: .5em;
   }
 }
 
@@ -1472,9 +1466,9 @@ textarea:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1487,12 +1481,6 @@ textarea:hover {
     border: 0;
     color: white;
     padding: 1em;
-  }
-  .standard-landing .standard-heading {
-    text-align: left;
-  }
-  .standard-landing .standard-heading h1 {
-    margin-bottom: .5em;
   }
 }
 
@@ -1505,9 +1493,9 @@ textarea:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1520,12 +1508,6 @@ textarea:hover {
     border: 0;
     color: white;
     padding: 1em;
-  }
-  .standard-landing .standard-heading {
-    text-align: left;
-  }
-  .standard-landing .standard-heading h1 {
-    margin-bottom: .5em;
   }
 }
 

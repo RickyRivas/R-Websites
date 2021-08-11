@@ -3,7 +3,7 @@
         height: 34vw;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
         flex-direction: column;
         background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/images/tulsa.jpg);
@@ -12,12 +12,6 @@
         border: 0;
         color: white;
         padding: 1em;
-        & .standard-heading{
-            text-align: left;
-            & h1 {
-                margin-bottom: .5em;
-            }
-        }
     }
 
 }
@@ -26,7 +20,7 @@
         height: 25vw;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
         flex-direction: column;
         background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/images/tulsa.jpg);
@@ -35,12 +29,6 @@
         border: 0;
         color: white;
         padding: 1em;
-        & .standard-heading{
-            text-align: left;
-            & h1 {
-                margin-bottom: .5em;
-            }
-        }
     }
 
 }
@@ -49,7 +37,7 @@
         height: 20vw;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
         flex-direction: column;
         background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/images/tulsa.jpg);
@@ -58,12 +46,6 @@
         border: 0;
         color: white;
         padding: 1em;
-        & .standard-heading{
-            text-align: left;
-            & h1 {
-                margin-bottom: .5em;
-            }
-        }
     }
 
 }
