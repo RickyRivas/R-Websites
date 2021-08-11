@@ -1563,37 +1563,28 @@ textarea:hover {
     padding: 1em;
     height: 100%;
     z-index: 2;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-  }
-  .landing-section .landing-container .landing-intro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
   }
-  .landing-section .landing-container .landing-intro h1 {
+  .landing-section .landing-container h1 {
     margin-bottom: 10px;
     font-size: 1.5em;
   }
-  .landing-section .landing-container .landing-intro p {
+  .landing-section .landing-container p {
     margin-bottom: 10px;
   }
-  .landing-section .landing-container .landing-intro .btns {
+  .landing-section .landing-container .btns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1604,15 +1595,8 @@ textarea:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .landing-section .landing-container .landing-intro .btns a {
-    margin-left: 10px;
-  }
-  .landing-section .landing-container .landing-imgs {
-    padding: 1em;
-  }
-  .landing-section .landing-container .landing-imgs img {
-    max-width: 100%;
-    max-height: 100%;
+  .landing-section .landing-container .btns a {
+    margin-right: 10px;
   }
   .intro-section {
     width: 100%;
