@@ -1,3 +1,4 @@
+
 const navSlide = () => {
     const burger = document.querySelector(".hamburger");
     const nav = document.querySelector(".nav-links");
@@ -20,6 +21,40 @@ const navSlide = () => {
     });
 };
 navSlide();
+// Loader JS
+// window.onload = function onLoad() {
+//     var circle = new ProgressBar.Circle('#progress', {
+//         color: '#FCB03C',
+//         duration: 3000,
+//         easing: 'easeInOut'
+//     });
+
+//     circle.animate(1);
+// }; 
+
+const navBar = document.querySelector(".nav");
+const main = document.querySelector("main");
+const loader = document.querySelector("#loader");
+loader.style.display = 'none';
+
+// const hide = () => {
+//     main.style.display = 'none';
+//     navBar.style.display = 'none';
+// }
+// hide();
+
+// const preload = () => {
+//     main.style.display = 'block';
+//     navBar.style.display = 'block';
+//     loader.style.display = 'none';
+// }
+
+// const timeOut = () => {
+//     setTimeout(preload, 3000);
+// }
+
+// timeOut();
+
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById("js-top");
 

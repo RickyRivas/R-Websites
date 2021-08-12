@@ -1523,6 +1523,31 @@ textarea:hover {
   opacity: .8;
 }
 
+#loader {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  display: block;
+}
+
+.progress {
+  height: 300px;
+}
+
+.progress > svg {
+  height: 100%;
+  display: block;
+}
+
 /* Main Container CSS */
 @media (min-width: 0px) {
   .landing-section {
@@ -1545,25 +1570,28 @@ textarea:hover {
     padding: 1em;
     height: 100%;
     z-index: 1;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    place-items: center;
-    height: 667px;
-    text-align: center;
-    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .landing-section .landing-container .landing-text h1 {
+  .landing-section .landing-container h1 {
     margin-bottom: 10px;
     font-size: 1.5em;
   }
-  .landing-section .landing-container .landing-text p {
+  .landing-section .landing-container p {
     margin-bottom: 10px;
   }
-  .landing-section .landing-container .landing-text .btns {
+  .landing-section .landing-container .btns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1574,26 +1602,14 @@ textarea:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .landing-section .landing-container .landing-text .btns a {
+  .landing-section .landing-container .btns a {
     margin-right: 10px;
-  }
-  .landing-section .landing-container .landing-imgs {
-    z-index: 3;
-  }
-  .landing-section .landing-container .landing-imgs img {
-    max-width: 100%;
   }
   .landing-section .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 1;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 77%, 0% 50%);
-            clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 77%, 0% 50%);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/images/tulsastock1.jpeg);
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/tulsastock1.jpeg);
-    background-size: cover;
-    background-position: center;
   }
   .intro-section {
     width: 100%;

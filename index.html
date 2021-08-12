@@ -31,7 +31,7 @@
 <body>
     <!-- Navigation Start -->
     <nav>
-        <div class='nav-wrapper'>
+        <div class='nav-wrapper'>  
             <p>RWD</p>
             <ul class="nav-links">
                 <li class="nav-link"><a href="index.html">Home</a></li>
@@ -57,11 +57,15 @@
                 <span class="screen-reader-text">Back to top</span>
             </div>
         </a>
+        <div id='loader'>
+            <h1>hey</h1>
+            <div class="progress" id="progress"></div>
+        </div>
         <!-- Landing Start -->
         <section class='landing-section'>
             <div class='overlay'></div>
             <div class='landing-container'>
-                <div class='landing-text'>
+             
                     <h1>Small Business Web Development + Design</h1>
                     <p>No WordPress or Page-builders. Custom coded websites delivering premium results starting at $150
                         per
@@ -70,11 +74,7 @@
                         <a href='contact.html' class='button'>Contact</a>
                         <a href='#' class='button'>Pricing</a>
                     </div>
-                </div>
-                <div class='landing-imgs'>
-                    <img src='images/iphone12psd.png' alt='mobile landing screenshot of client website' class=''>
-                </div>
-
+                
             </div>
         </section>
         <!-- Landing End -->
@@ -475,6 +475,7 @@
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/progress.js"></script>
     <script>
         AOS.init();
     </script>
