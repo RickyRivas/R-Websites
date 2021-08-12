@@ -1554,6 +1554,7 @@ textarea:hover {
     place-items: center;
     height: 667px;
     text-align: center;
+    color: white;
   }
   .landing-section .landing-container .landing-text h1 {
     margin-bottom: 10px;
@@ -1589,7 +1590,10 @@ textarea:hover {
     z-index: 1;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 77%, 0% 50%);
             clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 77%, 0% 50%);
-    background: linear-gradient(45deg, #8A2387, #E94057, #F27121);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/images/tulsastock1.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/tulsastock1.jpeg);
+    background-size: cover;
+    background-position: center;
   }
   .intro-section {
     width: 100%;

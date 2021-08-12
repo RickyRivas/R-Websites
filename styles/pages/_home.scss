@@ -24,6 +24,7 @@
             place-items: center;
             height: 667px;
             text-align: center;
+            color: white;
 
             & .landing-text {
                 & h1 {
@@ -65,7 +66,9 @@
             width: 100%;
             z-index: 1;
             clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 77%, 0% 50%);
-            background: linear-gradient(45deg, #8A2387, #E94057, #F27121);
+            background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(/images/tulsastock1.jpeg);
+            background-size: cover;
+            background-position: center;
         }
     }
 
