@@ -23,24 +23,37 @@ const navSlide = () => {
 navSlide();
 
 //Loader JS
-const loader = document.querySelector('#loader');
-const navbar = document.querySelector('#home-nav');
-navbar.style.display = 'none';
+
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("#home-nav").style.display = "none";
+        document.querySelector("#home-main").style.display = "none";
+        document.querySelector("#loader").style.visibility = "block";
+    } else {
+        document.querySelector("#loader").style.display = "none";
+        document.querySelector("#home-main").style.display = "block";
+        document.querySelector("#home-nav").style.display = "block";
+    }
+};
+// x
+// const loader = document.querySelector('#loader');
+// const navbar = document.querySelector('#home-nav');
+// navbar.style.display = 'none';
  
-const main = document.querySelector("#home-main");
-main.style.display = 'none';
+// const main = document.querySelector("#home-main");
+// main.style.display = 'none';
 
-function unHide() {
-    navbar.style.display = 'block';
-    main.style.display = 'block';
-    loader.style.display = 'none';
-}
+// function unHide() {
+//     navbar.style.display = 'block';
+//     main.style.display = 'block';
+//     loader.style.display = 'none';
+// }
 
-function timeOut() {
-    setTimeout(unHide, 3000)
-}
-timeOut();
-// Loading js
+// function timeOut() {
+//     setTimeout(unHide, 3000)
+// }
+// timeOut();
+
 (() => {
   const $triangles = document.querySelectorAll(".triangle");
   const template = `<svg class="triangle-svg" viewBox="0 0 140 141">
