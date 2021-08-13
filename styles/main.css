@@ -594,7 +594,7 @@ html {
   width: 40px;
   height: 4px;
   background-color: #8a8b8b;
-  border-radius: 4px;
+  border-radius: 0px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
