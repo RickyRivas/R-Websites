@@ -1524,8 +1524,8 @@ textarea:hover {
 }
 
 main nav {
-  -webkit-animation: fadeIn ease 1s;
-          animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 2s;
+          animation: fadeIn ease 2s;
 }
 
 #loader {

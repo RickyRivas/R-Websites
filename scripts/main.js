@@ -26,15 +26,16 @@ navSlide();
 
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector("#home-nav").style.display = "none";
-        document.querySelector("#home-main").style.display = "none";
+        document.querySelector("nav").style.display = "none";
+        document.querySelector("main").style.display = "none";
         document.querySelector("#loader").style.visibility = "block";
     } else {
         document.querySelector("#loader").style.display = "none";
-        document.querySelector("#home-main").style.display = "block";
-        document.querySelector("#home-nav").style.display = "block";
+        document.querySelector("main").style.display = "block";
+        document.querySelector("nav").style.display = "block";
     }
 };
+
 // x
 // const loader = document.querySelector('#loader');
 // const navbar = document.querySelector('#home-nav');
