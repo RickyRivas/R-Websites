@@ -448,8 +448,8 @@
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 40px;
-  height: 3px;
-  background-color: $primaryred;
+  height: 4px;
+  background-color: $lightgray;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

@@ -587,8 +587,8 @@ html {
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 40px;
-  height: 3px;
-  background-color: #e5383b;
+  height: 4px;
+  background-color: #8a8b8b;
   border-radius: 4px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
