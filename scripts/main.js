@@ -26,13 +26,13 @@ navSlide();
 
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector("nav").style.display = "none";
-        document.querySelector("main").style.display = "none";
+        document.querySelector("#nav").style.display = "none";
+        document.querySelector("#main").style.display = "none";
         document.querySelector("#loader").style.visibility = "block";
     } else {
         document.querySelector("#loader").style.display = "none";
-        document.querySelector("main").style.display = "block";
-        document.querySelector("nav").style.display = "block";
+        document.querySelector("#main").style.display = "block";
+        document.querySelector("#nav").style.display = "block"; 
     }
 };
 
