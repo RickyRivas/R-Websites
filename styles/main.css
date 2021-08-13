@@ -16,7 +16,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -1828,7 +1828,7 @@ main nav {
   }
   .landing-section .landing-container h1 {
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
   }
   .landing-section .landing-container p {
