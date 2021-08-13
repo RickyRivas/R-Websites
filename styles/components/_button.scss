@@ -1,33 +1,52 @@
 .button {
-    padding: 10px 30px;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    font-size: .9em;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  font-size: .9em;
 
-    &:hover {
-        opacity: .8;
-    }
+  &:hover {
+    opacity: .8;
+  }
 }
+
+main {
+  animation: fadeIn ease 1s;
+}
+
 #loader {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeOut ease 10ms;
-    animation-delay: 2s;
-    background-color: black;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding-top: 8em;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeOut ease 1s;
+  animation-delay: 2s;
+  background-color: black;
 }
 
-@keyframes fadeOut{
+@keyframes fadeOut {
   0% {
-    opacity:1;
+    opacity: 1;
   }
+
   100% {
-    opacity:0;
+    opacity: 0;
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 $triangle-size: 150px;
 $triange-speed: 2000ms;
 $triangle-speed-basis: 2000ms / 5;
@@ -37,15 +56,15 @@ $triangle-speed-basis: 2000ms / 5;
     opacity: 0;
     transform: scale(0.1) translatez(0);
   }
-  
+
   40% {
     opacity: 1;
   }
-  
+
   60% {
     opacity: 1;
   }
-  
+
   100% {
     opacity: 0;
     transform: scale(1) translatez(0);
@@ -56,40 +75,45 @@ $triangle-speed-basis: 2000ms / 5;
   0% {
     opacity: 0;
   }
-  
+
   20% {
     opacity: 0;
   }
-  
+
   40% {
     opacity: 0.8;
   }
-  
+
   60% {
-    opacity: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
 .triangle {
+  position: relative;
+  top: 0;
   animation: grow-and-fade $triange-speed linear infinite;
   height: $triangle-size;
   left: 0;
   opacity: 0;
   width: $triangle-size;
-  position: absolute;
-  top: 0%;
   transform: translatez(0);
   transform-origin: 50% 60%;
+  position: absolute;
   will-change: opacity, transform;
-  
+
   &-wrapper {
     height: $triangle-size;
     position: relative;
     width: $triangle-size;
   }
-  
+
   &-loading {
-    animation: pulsing-fade 6000ms ease infinite;
+    animation: pulsing-fade 2000ms ease forwards;
     color: white;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 12px;
@@ -104,29 +128,54 @@ $triangle-speed-basis: 2000ms / 5;
     transform: translate3d(-50%, -50%, 0);
     text-transform: uppercase;
   }
-  
+
   &-svg {
     margin-top: -20px;
     opacity: 0.5;
     overflow: visible;
   }
-  
+
   &-polygon {
     stroke-width: 5px;
   }
-  
-  &-1 { animation-delay: $triangle-speed-basis * 0; }
-  &-1 &-polygon { stroke: hotpink; }
 
-  &-2 { animation-delay: $triangle-speed-basis * 1; }
-  &-2 &-polygon { stroke: aqua; }
+  &-1 {
+    animation-delay: $triangle-speed-basis * 0;
+  }
 
-  &-3 { animation-delay: $triangle-speed-basis * 2; }
-  &-3 &-polygon { stroke: cornflowerblue; }
+  &-1 &-polygon {
+    stroke: hotpink;
+  }
 
-  &-4 { animation-delay: $triangle-speed-basis * 3; }
-  &-4 &-polygon { stroke: yellow; }
+  &-2 {
+    animation-delay: $triangle-speed-basis * 1;
+  }
 
-  &-5 { animation-delay: $triangle-speed-basis * 4; }
-  &-5 &-polygon { stroke: white; }
+  &-2 &-polygon {
+    stroke: aqua;
+  }
+
+  &-3 {
+    animation-delay: $triangle-speed-basis * 2;
+  }
+
+  &-3 &-polygon {
+    stroke: cornflowerblue;
+  }
+
+  &-4 {
+    animation-delay: $triangle-speed-basis * 3;
+  }
+
+  &-4 &-polygon {
+    stroke: yellow;
+  }
+
+  &-5 {
+    animation-delay: $triangle-speed-basis * 4;
+  }
+
+  &-5 &-polygon {
+    stroke: white;
+  }
 }

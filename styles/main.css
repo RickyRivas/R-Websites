@@ -1523,20 +1523,27 @@ textarea:hover {
   opacity: .8;
 }
 
+main {
+  -webkit-animation: fadeIn ease 1s;
+          animation: fadeIn ease 1s;
+}
+
 #loader {
+  position: relative;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 8em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: fadeOut ease 10ms;
-          animation: fadeOut ease 10ms;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-animation: fadeOut ease 1s;
+          animation: fadeOut ease 1s;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   background-color: black;
@@ -1557,6 +1564,24 @@ textarea:hover {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1609,7 +1634,10 @@ textarea:hover {
     opacity: 0.8;
   }
   60% {
-    opacity: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1624,23 +1652,27 @@ textarea:hover {
     opacity: 0.8;
   }
   60% {
-    opacity: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 .triangle {
+  position: relative;
+  top: 0;
   -webkit-animation: grow-and-fade 2000ms linear infinite;
           animation: grow-and-fade 2000ms linear infinite;
   height: 150px;
   left: 0;
   opacity: 0;
   width: 150px;
-  position: absolute;
-  top: 0%;
   -webkit-transform: translatez(0);
           transform: translatez(0);
   -webkit-transform-origin: 50% 60%;
           transform-origin: 50% 60%;
+  position: absolute;
   will-change: opacity, transform;
 }
 
@@ -1651,8 +1683,8 @@ textarea:hover {
 }
 
 .triangle-loading {
-  -webkit-animation: pulsing-fade 6000ms ease infinite;
-          animation: pulsing-fade 6000ms ease infinite;
+  -webkit-animation: pulsing-fade 2000ms ease forwards;
+          animation: pulsing-fade 2000ms ease forwards;
   color: white;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 12px;
