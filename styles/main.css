@@ -1561,14 +1561,18 @@ textarea:hover {
   width: 1em;
   height: 1em;
   display: block;
-  -webkit-animation: move 1s infinite ease-in-out;
-          animation: move 1s infinite ease-in-out;
+  -webkit-animation: move 2s infinite ease-in-out;
+          animation: move 2s infinite ease-in-out;
 }
 
 @-webkit-keyframes move {
   0% {
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -1578,8 +1582,12 @@ textarea:hover {
 
 @keyframes move {
   0% {
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     -webkit-transform: translateX(0);
