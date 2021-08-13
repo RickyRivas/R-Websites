@@ -1832,7 +1832,8 @@ main nav {
     color: white;
   }
   .landing-section .landing-container p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
     color: #8a8b8b;
   }
   .landing-section .landing-container a {
