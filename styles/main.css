@@ -70,6 +70,9 @@ html {
     padding: 0.5em;
     width: 100%;
   }
+  nav .nav-wrapper p {
+    color: #e5383b;
+  }
   nav .nav-wrapper .nav-links {
     margin: 0;
     position: fixed;
@@ -1515,7 +1518,7 @@ textarea:hover {
   padding: 10px 30px;
   color: white;
   text-decoration: none;
-  background-color: black;
+  border: 2px solid #e5383b;
   font-size: .9em;
 }
 
@@ -1756,6 +1759,36 @@ main nav {
   stroke: white;
 }
 
+.custom-shape-divider-bottom-1628883224 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628883224 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1628883224 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1628883224 svg {
+    width: calc(191% + 1.3px);
+    height: 110px;
+  }
+}
+
 /* Main Container CSS */
 @media (min-width: 0px) {
   .landing-section {
@@ -1771,6 +1804,7 @@ main nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: radial-gradient(circle farthest-side at 100% 100%, #424242, #1a1918);
   }
   .landing-section .landing-container {
     width: 100%;
@@ -1784,9 +1818,9 @@ main nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1795,22 +1829,13 @@ main nav {
   .landing-section .landing-container h1 {
     margin-bottom: 10px;
     font-size: 1.5em;
+    color: white;
   }
   .landing-section .landing-container p {
     margin-bottom: 10px;
+    color: #8a8b8b;
   }
-  .landing-section .landing-container .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .landing-section .landing-container .btns a {
+  .landing-section .landing-container a {
     margin-right: 10px;
   }
   .landing-section .overlay {

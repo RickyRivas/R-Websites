@@ -10,6 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+            background-image: radial-gradient(circle farthest-side at 100% 100%,#424242,#1a1918);
 
         & .landing-container {
             width: 100%;
@@ -19,28 +20,23 @@
             z-index: 1;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
 
                 & h1 {
                     margin-bottom: 10px;
                     font-size: 1.5em;
+                    color: white;
                 }
 
                 & p {
                     margin-bottom: 10px;
+                    color: #8a8b8b;
                 }
-
-                & .btns {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
 
                     & a {
                         margin-right: 10px;
                     }
-                }
-
 
         }
 

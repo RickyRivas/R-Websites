@@ -2,7 +2,7 @@
   padding: 10px 30px;
   color: white;
   text-decoration: none;
-  background-color: black;
+  border: 2px solid $primaryred;
   font-size: .9em;
 
   &:hover {
@@ -179,4 +179,33 @@ $triangle-speed-basis: 2000ms / 5;
   &-5 &-polygon {
     stroke: white;
   }
+}
+// Landing 
+.custom-shape-divider-bottom-1628883224 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628883224 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1628883224 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1628883224 svg {
+        width: calc(191% + 1.3px);
+        height: 110px;
+    }
 }
