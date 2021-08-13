@@ -10,7 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-            background-image: radial-gradient(circle farthest-side at 100% 100%,#424242,#1a1918);
+        background-image: radial-gradient(circle farthest-side at 100% 100%,#424242,#1a1918);
 
         & .landing-container {
             width: 100%;
@@ -47,9 +47,13 @@
 
         & .overlay {
             position: absolute;
-            height: 100%;
+            height: 100px;
             width: 100%;
             z-index: 1;
+            bottom: -1%;
+            clip-path: polygon(38% 22%, 76% 9%, 100% 28%, 100% 100%, 0 100%, 0 0);
+            background-color: white;
+            object-fit: contain;
         }
     }
 
