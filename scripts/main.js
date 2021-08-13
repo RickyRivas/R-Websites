@@ -24,10 +24,10 @@ navSlide();
 
 //Loader JS
 const loader = document.querySelector('#loader');
-const navbar = document.querySelector('nav');
+const navbar = document.querySelector('#home-nav');
 navbar.style.display = 'none';
  
-const main = document.querySelector("main");
+const main = document.querySelector("#home-main");
 main.style.display = 'none';
 
 function unHide() {
