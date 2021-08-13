@@ -11,6 +11,40 @@
   }
 }
 
+.sec-btn {
+  color: $primaryred;
+  text-decoration: underline;
+  display: inline-block;
+
+  & span {
+    position: relative;
+    font-size: .9em !important;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after{
+      content:'';
+      background: center url(/images/next.svg);
+      background-size: cover;
+      width: 1em;
+      height: 1em;
+      display: block;
+      animation: move 1s infinite ease-in-out;
+    }
+  }
+
+ @keyframes move { 
+   0% {
+     transform: translateX(20px);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
+}
+
 main nav {
   animation: fadeIn ease 2s;
 }
@@ -181,32 +215,33 @@ $triangle-speed-basis: 2000ms / 5;
     stroke: white;
   }
 }
+
 // Landing 
 .custom-shape-divider-bottom-1628883224 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1628883224 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
 }
 
 .custom-shape-divider-bottom-1628883224 .shape-fill {
-    fill: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1628883224 svg {
-        width: calc(191% + 1.3px);
-        height: 110px;
-    }
+  .custom-shape-divider-bottom-1628883224 svg {
+    width: calc(191% + 1.3px);
+    height: 110px;
+  }
 }
