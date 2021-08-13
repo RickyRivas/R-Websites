@@ -1523,7 +1523,8 @@ textarea:hover {
 }
 
 .button:hover {
-  opacity: .8;
+  background-color: #e5383b;
+  color: black;
 }
 
 main nav {
@@ -1794,7 +1795,7 @@ main nav {
   .landing-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 667px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1836,7 +1837,18 @@ main nav {
     font-size: 1.2em;
     color: #8a8b8b;
   }
-  .landing-section .landing-container a {
+  .landing-section .landing-container .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .landing-section .landing-container .btns a {
     margin-right: 10px;
   }
   .landing-section .overlay {
