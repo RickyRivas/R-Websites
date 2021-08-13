@@ -21,39 +21,25 @@ const navSlide = () => {
     });
 };
 navSlide();
-// Loader JS
-// window.onload = function onLoad() {
-//     var circle = new ProgressBar.Circle('#progress', {
-//         color: '#FCB03C',
-//         duration: 3000,
-//         easing: 'easeInOut'
-//     });
 
-//     circle.animate(1);
-// }; 
-
-const navBar = document.querySelector(".nav");
+//Loader JS
+const loader = document.querySelector('#loader');
+const navbar = document.querySelector('nav');
+navbar.style.display = 'none';
+ 
 const main = document.querySelector("main");
-const loader = document.querySelector("#loader");
-loader.style.display = 'none';
+main.style.display = 'none';
 
-// const hide = () => {
-//     main.style.display = 'none';
-//     navBar.style.display = 'none';
-// }
-// hide();
+function unHide() {
+    navbar.style.display = 'block';
+    main.style.display = 'block';
+    loader.style.display = 'none';
+}
 
-// const preload = () => {
-//     main.style.display = 'block';
-//     navBar.style.display = 'block';
-//     loader.style.display = 'none';
-// }
-
-// const timeOut = () => {
-//     setTimeout(preload, 3000);
-// }
-
-// timeOut();
+function timeOut() {
+    setTimeout(unHide, 3000)
+}
+timeOut();
 
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById("js-top");

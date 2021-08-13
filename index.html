@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Styles -->
     <link href="styles/main.css" rel="stylesheet" />
+    <link href='styles/loading-bar.min.css' rel='stylesheet' type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYRWXTF2D7"></script>
     <script>
@@ -31,7 +32,7 @@
 <body>
     <!-- Navigation Start -->
     <nav>
-        <div class='nav-wrapper'>  
+        <div class='nav-wrapper'>
             <p>RWD</p>
             <ul class="nav-links">
                 <li class="nav-link"><a href="index.html">Home</a></li>
@@ -49,6 +50,18 @@
         </div>
     </nav>
     <!-- Navigation End -->
+    <div id='loader'>
+        <svg class='loading-svg' width="200" height="200" viewBox="0 0 100 100">
+            <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none">
+            </polyline>
+            <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none">
+            </polyline>
+            <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none">
+            </polyline>
+            <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none">
+            </polyline>
+        </svg>
+    </div>
     <!-- Main Start -->
     <main>
         <a class="top-link hide" href='' id="js-top">
@@ -57,24 +70,20 @@
                 <span class="screen-reader-text">Back to top</span>
             </div>
         </a>
-        <div id='loader'>
-            <h1>hey</h1>
-            <div class="progress" id="progress"></div>
-        </div>
         <!-- Landing Start -->
         <section class='landing-section'>
             <div class='overlay'></div>
             <div class='landing-container'>
-             
-                    <h1>Small Business Web Development + Design</h1>
-                    <p>No WordPress or Page-builders. Custom coded websites delivering premium results starting at $150
-                        per
-                        month.</p>
-                    <div class='btns'>
-                        <a href='contact.html' class='button'>Contact</a>
-                        <a href='#' class='button'>Pricing</a>
-                    </div>
-                
+
+                <h1>Small Business Web Development + Design</h1>
+                <p>No WordPress or Page-builders. Custom coded websites delivering premium results starting at $150
+                    per
+                    month.</p>
+                <div class='btns'>
+                    <a href='contact.html' class='button'>Contact</a>
+                    <a href='#' class='button'>Pricing</a>
+                </div>
+
             </div>
         </section>
         <!-- Landing End -->
@@ -475,7 +484,7 @@
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="scripts/progress.js"></script>
+    <script src="scripts/loading-bar.min.js"></script>
     <script>
         AOS.init();
     </script>
