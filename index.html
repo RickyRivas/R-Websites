@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Styles -->
     <link href="styles/main.css" rel="stylesheet" />
-    <link href='styles/loading-bar.min.css' rel='stylesheet' type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYRWXTF2D7"></script>
     <script>
@@ -51,16 +50,14 @@
     </nav>
     <!-- Navigation End -->
     <div id='loader'>
-        <svg class='loading-svg' width="200" height="200" viewBox="0 0 100 100">
-            <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none">
-            </polyline>
-            <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none">
-            </polyline>
-            <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none">
-            </polyline>
-            <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none">
-            </polyline>
-        </svg>
+        <div class="triangle-wrapper">
+            <div class="triangle triangle-1"></div>
+            <div class="triangle triangle-2"></div>
+            <div class="triangle triangle-3"></div>
+            <div class="triangle triangle-4"></div>
+            <div class="triangle triangle-5"></div>
+            <p class="triangle-loading">Loading</p>
+        </div>
     </div>
     <!-- Main Start -->
     <main>
