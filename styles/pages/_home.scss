@@ -1,4 +1,3 @@
-
 @media (min-width: 0px) {
     .landing-section {
         position: relative;
@@ -195,11 +194,11 @@
         }
     }
 
+    // Port Cards 
     .portfolio-section {
         width: 100%;
 
         & .portfolio-container {
-            padding: 1em;
             max-width: 1200px;
             width: 100%;
             margin: auto;
@@ -207,13 +206,13 @@
 
             & .portfolio-heading {
                 margin-bottom: 1em;
+                padding: 1em;
 
             }
 
             & .portfolio-cards {
                 display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
             }
         }
@@ -306,33 +305,10 @@
             }
         }
     }
-
-    .portfolio-section {
-        width: 100%;
-
-        & .portfolio-container {
-            padding: 1em;
-            max-width: 1200px;
-            margin: auto;
-
-
-            & .portfolio-heading {
-                margin-bottom: 1em;
-
-            }
-
-            & .portfolio-cards {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: auto;
-
-            }
-        }
-    }
 }
 
 @media (min-width: 1200px) {
-      .landing-section {
+    .landing-section {
         height: 786px;
     }
 
@@ -411,30 +387,4 @@
             }
         }
     }
-
-    // Port Section 
-    .portfolio-section {
-        width: 100%;
-
-        & .portfolio-container {
-            padding: 1em;
-            max-width: 1200px;
-            width: 100%;
-            margin: auto;
-
-
-            & .portfolio-heading {
-                margin-bottom: 1em;
-
-            }
-
-            & .portfolio-cards {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: auto;
-
-            }
-        }
-    }
-
 }

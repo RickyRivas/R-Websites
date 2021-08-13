@@ -1,7 +1,6 @@
 @media (min-width: 0px) {
     .port-card {
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: $box-shadow;
         overflow: hidden;
         position: relative;
@@ -60,34 +59,12 @@
             margin-bottom: .8em;
         }
     }
-
-    .user {
-        display: flex;
-        margin-top: auto;
-    }
-
-    .user img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    .user-info h5 {
-        margin: 0;
-    }
-
-    .user-info small {
-        color: #888785;
-    }
-
     // Form
 }
 
 @media (min-width: 375px) {
     .port-card {
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: $box-shadow;
         overflow: hidden;
         max-width: 330px;
@@ -135,27 +112,6 @@
             margin-bottom: .8em;
             font-size: 1.2em;
         }
-    }
-
-    .user {
-        display: flex;
-        margin-top: auto;
-    }
-
-    .user img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    .user-info h5 {
-        margin: 0;
-        font-size: 1em;
-    }
-
-    .user-info small {
-        color: #888785;
     }
 }
 

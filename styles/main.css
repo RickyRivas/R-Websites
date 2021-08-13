@@ -885,7 +885,6 @@ html {
 @media (min-width: 0px) {
   .port-card {
     background-color: #fff;
-    border-radius: 10px;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     overflow: hidden;
@@ -947,30 +946,11 @@ html {
   .port-card-body p {
     margin-bottom: .8em;
   }
-  .user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: auto;
-  }
-  .user img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .user-info h5 {
-    margin: 0;
-  }
-  .user-info small {
-    color: #888785;
-  }
 }
 
 @media (min-width: 375px) {
   .port-card {
     background-color: #fff;
-    border-radius: 10px;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     overflow: hidden;
@@ -1022,25 +1002,6 @@ html {
   .port-card-body p {
     margin-bottom: .8em;
     font-size: 1.2em;
-  }
-  .user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: auto;
-  }
-  .user img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .user-info h5 {
-    margin: 0;
-    font-size: 1em;
-  }
-  .user-info small {
-    color: #888785;
   }
 }
 
@@ -2074,21 +2035,19 @@ main nav {
     width: 100%;
   }
   .portfolio-section .portfolio-container {
-    padding: 1em;
     max-width: 1200px;
     width: 100%;
     margin: auto;
   }
   .portfolio-section .portfolio-container .portfolio-heading {
     margin-bottom: 1em;
+    padding: 1em;
   }
   .portfolio-section .portfolio-container .portfolio-cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -2165,25 +2124,6 @@ main nav {
   .pricing-section .pricing-container .list-items .list-item::before {
     content: url(/images/check.svg);
     width: 3em;
-  }
-  .portfolio-section {
-    width: 100%;
-  }
-  .portfolio-section .portfolio-container {
-    padding: 1em;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .portfolio-section .portfolio-container .portfolio-heading {
-    margin-bottom: 1em;
-  }
-  .portfolio-section .portfolio-container .portfolio-cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
   }
 }
 
@@ -2263,26 +2203,6 @@ main nav {
   .pricing-section .pricing-container .list-items .list-item::before {
     content: url(/images/check.svg);
     width: 3em;
-  }
-  .portfolio-section {
-    width: 100%;
-  }
-  .portfolio-section .portfolio-container {
-    padding: 1em;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-  }
-  .portfolio-section .portfolio-container .portfolio-heading {
-    margin-bottom: 1em;
-  }
-  .portfolio-section .portfolio-container .portfolio-cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
