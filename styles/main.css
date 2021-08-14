@@ -1880,22 +1880,6 @@ main nav {
     font-size: 2.2em;
     color: white;
   }
-  .landing-section .landing-container h1 span {
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-  .landing-section .landing-container h1 span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    -webkit-transform-origin: 100% 0;
-            transform-origin: 100% 0;
-    background: transparent;
-  }
   .landing-section .landing-container p {
     margin-bottom: 15px;
     font-size: 1.3em;

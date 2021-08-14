@@ -34,23 +34,6 @@
                 margin-bottom: 10px;
                 font-size: 2.2em;
                 color: white;
-
-                & span {
-                    display: block;
-                    padding: 0;
-                    margin: 0;
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        z-index: 1;
-                        transform-origin: 100% 0;
-                        background: transparent;
-                    }
-                }
             }
 
             & p {
