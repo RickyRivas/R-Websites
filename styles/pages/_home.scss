@@ -6,7 +6,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: radial-gradient(circle farthest-side at 100% 100%, #424242, #1a1918);
+        background: linear-gradient(45deg,rgba(0,0,0,.5),rgba(0,0,0,.5)), url(/images/tulsaskyview1.jpeg);
+        background-position: 10% center;
+        background-size: cover;
 
         & .landing-container {
             width: 100%;
