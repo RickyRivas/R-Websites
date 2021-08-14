@@ -21,7 +21,9 @@ const navSlide = () => {
     });
 };
 navSlide();
-
+// Video
+var vid = document.querySelector("video");
+vid.playbackRate = 0.6;
 //Loader JS
 
 document.onreadystatechange = function() {
