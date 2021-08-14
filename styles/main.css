@@ -409,7 +409,7 @@ html {
     display: none;
   }
   nav .nav-wrapper .nav-links li a {
-    color: #8a8b8b;
+    color: #e9ecef;
     text-decoration: none;
   }
   nav .nav-wrapper .nav-links li:nth-child(1) {
@@ -532,7 +532,7 @@ html {
     display: none;
   }
   nav .nav-wrapper .nav-links li a {
-    color: #8a8b8b;
+    color: #e9ecef;
     text-decoration: none;
   }
   nav .nav-wrapper .nav-links li:nth-child(1) {
@@ -1870,7 +1870,7 @@ main nav {
   .landing-section .landing-container p {
     margin-bottom: 15px;
     font-size: 1.2em;
-    color: #8a8b8b;
+    color: #e9ecef;
   }
   .landing-section .landing-container .btns {
     display: -webkit-box;
