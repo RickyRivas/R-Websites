@@ -37,19 +37,32 @@ vid.playbackRate = 0.6;
 //         document.querySelector("#nav").style.display = "block"; 
 //     }
 // };
+// JS for reverse navSlide for when user clicks on nav link item to redirect to section on same page and automatically closes the 
+// nav for them
 
-(() => {
-  const $triangles = document.querySelectorAll(".triangle");
-  const template = `<svg class="triangle-svg" viewBox="0 0 140 141">
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <polygon class="triangle-polygon"  points="70 6 136 138 4 138"></polygon>
-    </g>
-  </svg>`;
+const reverseSlide = () => {
+  const burger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
+    //Toggle Nav
+    nav.classList.toggle("is-active");
+    //Animate Links
 
-  Array.prototype.forEach.call($triangles, ($triangle, index) => {
-    $triangle.innerHTML = template;
-  });
-})();
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade .1s ease-in forwards`;
+      }
+    });
+    //burger animation
+    burger.classList.toggle("is-active");
+
+
+};
+
+const navLink2 = document.querySelector('.nav-links');
+navLink2.addEventListener("click", reverseSlide);;
 
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById("js-top");
