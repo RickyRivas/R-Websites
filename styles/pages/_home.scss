@@ -6,6 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         // background: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/images/tulsaskyview1.jpeg);
         // background-size: cover;
         // background-position: center;
@@ -33,6 +34,23 @@
                 margin-bottom: 10px;
                 font-size: 2.2em;
                 color: white;
+
+                & span {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        transform-origin: 100% 0;
+                        background: transparent;
+                    }
+                }
             }
 
             & p {
@@ -60,9 +78,9 @@
             z-index: 1;
             // bottom: -1%;
             // clip-path: polygon(38% 22%, 76% 9%, 100% 28%, 100% 100%, 0 100%, 0 0);
-            background-color: $primaryred;
+            background-color: rgba(0,0,0,.6);
             object-fit: cover;
-            mix-blend-mode: multiply;
+            // mix-blend-mode: multiply;
         }
     }
 
@@ -238,13 +256,14 @@
 
 @media (min-width: 1024px) {
 
-     .landing-section {
+    .landing-section {
         position: relative;
         width: 100%;
         height: 667px;
         display: flex;
         justify-content: center;
         align-items: center;
+
         // background: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/images/tulsaskyview1.jpeg);
         // background-size: cover;
         // background-position: center;
