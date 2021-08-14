@@ -26,36 +26,17 @@ var vid = document.querySelector("video");
 vid.playbackRate = 0.6;
 //Loader JS
 
-document.onreadystatechange = function() {
-    if (document.readyState !== "complete") {
-        document.querySelector("#nav").style.display = "none";
-        document.querySelector("#main").style.display = "none";
-        document.querySelector("#loader").style.visibility = "block";
-    } else {
-        document.querySelector("#loader").style.display = "none";
-        document.querySelector("#main").style.display = "block";
-        document.querySelector("#nav").style.display = "block"; 
-    }
-};
-
-// x
-// const loader = document.querySelector('#loader');
-// const navbar = document.querySelector('#home-nav');
-// navbar.style.display = 'none';
- 
-// const main = document.querySelector("#home-main");
-// main.style.display = 'none';
-
-// function unHide() {
-//     navbar.style.display = 'block';
-//     main.style.display = 'block';
-//     loader.style.display = 'none';
-// }
-
-// function timeOut() {
-//     setTimeout(unHide, 3000)
-// }
-// timeOut();
+// document.onreadystatechange = function() {
+//     if (document.readyState !== "complete") {
+//         document.querySelector("#nav").style.display = "none";
+//         document.querySelector("#main").style.display = "none";
+//         document.querySelector("#loader").style.visibility = "block";
+//     } else {
+//         document.querySelector("#loader").style.display = "none";
+//         document.querySelector("#main").style.display = "block";
+//         document.querySelector("#nav").style.display = "block"; 
+//     }
+// };
 
 (() => {
   const $triangles = document.querySelectorAll(".triangle");
@@ -69,6 +50,7 @@ document.onreadystatechange = function() {
     $triangle.innerHTML = template;
   });
 })();
+
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById("js-top");
 
