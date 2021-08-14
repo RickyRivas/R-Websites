@@ -1582,10 +1582,6 @@ main nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-animation: fadeOut ease 1s;
-          animation: fadeOut ease 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   background-color: black;
 }
 
