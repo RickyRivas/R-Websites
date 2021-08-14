@@ -1903,9 +1903,10 @@ main nav {
     height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #e5383b;
     -o-object-fit: cover;
        object-fit: cover;
+    mix-blend-mode: multiply;
   }
   .intro-section {
     width: 100%;
@@ -2134,15 +2135,6 @@ main nav {
   }
   .landing-section .landing-container .btns a {
     margin-right: 10px;
-  }
-  .landing-section .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .pricing-section {
     width: 100%;
