@@ -330,6 +330,14 @@ html {
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     z-index: 100;
   }
+  nav .logo-wrapper {
+    background-color: transparent;
+    mix-blend-mode: difference;
+  }
+  nav .logo-wrapper p {
+    color: white;
+    font-weight: bold;
+  }
   nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2104,13 +2112,13 @@ main nav {
             flex-direction: column;
   }
   .landing-section .landing-container h1 {
-    margin-bottom: 10px;
-    font-size: 2em;
+    margin-bottom: 15px;
+    font-size: 2.5em;
     color: white;
   }
   .landing-section .landing-container p {
-    margin-bottom: 15px;
-    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-size: 1.5em;
     color: #e9ecef;
   }
   .landing-section .landing-container .btns {
