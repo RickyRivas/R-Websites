@@ -1684,6 +1684,16 @@ main nav {
     max-width: 1200px;
     margin: auto;
   }
+  .intro-section .intro-heading {
+    padding: 3em 1em;
+    text-align: center;
+  }
+  .intro-section .intro-heading h2 {
+    margin-bottom: .5em;
+  }
+  .intro-section .intro-heading p {
+    line-height: 1.5;
+  }
   .intro-section .services {
     display: -ms-grid;
     display: grid;
