@@ -1,14 +1,40 @@
 .button {
   padding: 10px 30px;
   color: white;
+  background-color: $primaryred;
   text-decoration: none;
-  border: 2px solid white;
+  border: 2px solid $primaryred;
   font-size: .9em;
+  border-radius: .5em;
 
   &:hover {
     background-color: $primaryred;
     transition: all .5s;
   }
+}
+
+.long-arrow-right::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 45px;
+  background-color: white;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+
+
+.long-arrow-right {
+  transform: rotate(135deg);
+}
+
+.long-arrow-right {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
 }
 
 .sec-btn {

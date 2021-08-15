@@ -608,7 +608,7 @@ html {
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: black;
+  background-color: #8a8b8b;
   border-radius: 0px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -1500,15 +1500,42 @@ textarea:hover {
 .button {
   padding: 10px 30px;
   color: white;
+  background-color: #e5383b;
   text-decoration: none;
-  border: 2px solid white;
+  border: 2px solid #e5383b;
   font-size: .9em;
+  border-radius: .5em;
 }
 
 .button:hover {
   background-color: #e5383b;
   -webkit-transition: all .5s;
   transition: all .5s;
+}
+
+.long-arrow-right::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 45px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg) translate(15px, 4px);
+          transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+
+.long-arrow-right {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.long-arrow-right {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
 }
 
 .sec-btn {
@@ -1637,9 +1664,23 @@ main nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 100%;
   }
   .landing-section .landing-container .btns a {
+    width: 100%;
     margin-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing-section .landing-container .btns a img {
+    width: 2em;
   }
   .landing-section .overlay {
     position: absolute;
