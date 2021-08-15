@@ -20,7 +20,7 @@ let rule = CSSRulePlugin.getRule(".landing-container h1 span::after");
 
 var tl = gsap.timeline({
     defaults: {
-        duration: 2
+        duration: 1
     }
 })
 

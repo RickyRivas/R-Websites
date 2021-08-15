@@ -6,8 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url(/images/tulsaskyview1.jpeg) center;
-        background-size: cover;
+        background-color: $primaryred;
 
         & video {
             position: absolute;
@@ -23,11 +22,12 @@
             max-width: 1000px;
             padding: 1em;
             height: 100%;
-            z-index: 1;
+            z-index: 3;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+
 
             & h1 {
                 margin-bottom: 10px;
@@ -60,8 +60,9 @@
             z-index: 1;
             // bottom: -1%;
             // clip-path: polygon(38% 22%, 76% 9%, 100% 28%, 100% 100%, 0 100%, 0 0);
-            background-color: rgba(0, 0, 0, .6);
-            object-fit: cover;
+            // background-color: rgba(0,0,0,.6);
+            // mix-blend-mode: multiply;
+            // object-fit: cover;
             // mix-blend-mode: multiply;
         }
     }
