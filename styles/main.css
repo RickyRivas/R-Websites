@@ -147,6 +147,7 @@ html {
   }
   nav .nav-wrapper .nav-links li a:hover {
     color: #e5383b;
+    border-bottom: 1px solid #e5383b;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
@@ -331,8 +332,8 @@ html {
     width: 100vw;
   }
   nav .is-active {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     z-index: 100;
   }
   nav .logo-wrapper {
@@ -462,8 +463,8 @@ html {
     width: 100vw;
   }
   nav .is-active {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     z-index: 100;
   }
   nav .nav-wrapper {
@@ -1582,6 +1583,37 @@ main nav {
   position: relative;
 }
 
+.custom-shape-divider-bottom-1628987954 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.custom-shape-divider-bottom-1628987954 svg {
+  position: relative;
+  display: block;
+  width: calc(143% + 1.3px);
+  height: 116px;
+}
+
+.custom-shape-divider-bottom-1628987954 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1628987954 svg {
+    width: calc(148% + 1.3px);
+    height: 66px;
+  }
+}
+
 @media (min-width: 0px) {
   .landing-section {
     position: relative;
@@ -1596,6 +1628,8 @@ main nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: url(/images/tulsaskyview1.jpeg) center;
+    background-size: cover;
   }
   .landing-section video {
     position: absolute;

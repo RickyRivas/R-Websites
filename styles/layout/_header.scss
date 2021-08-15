@@ -23,6 +23,7 @@
     & .logo-wrapper {
       background-color: transparent;
       mix-blend-mode: difference;
+
       & p {
         color: white;
         font-weight: bold;
@@ -84,6 +85,7 @@
 
             &:hover {
               color: $primaryred;
+              border-bottom: 1px solid $primaryred;
               transition: all .5s;
             }
           }
@@ -236,12 +238,14 @@
     width: 100vw;
 
     & .is-active {
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      box-shadow: none;
       z-index: 100;
     }
-     & .logo-wrapper {
+
+    & .logo-wrapper {
       background-color: transparent;
       mix-blend-mode: difference;
+
       & p {
         color: white;
         font-weight: bold;
@@ -343,7 +347,7 @@
     width: 100vw;
 
     & .is-active {
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      box-shadow: none;
       z-index: 100;
     }
 
