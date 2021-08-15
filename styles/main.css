@@ -1504,7 +1504,7 @@ textarea:hover {
   text-decoration: none;
   border: 2px solid #e5383b;
   font-size: .9em;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .button:hover {
@@ -1685,7 +1685,7 @@ main nav {
     margin: auto;
   }
   .intro-section .intro-heading {
-    padding: 1em;
+    padding: 3em 1em;
     text-align: center;
   }
   .intro-section .intro-heading h2 {
@@ -1698,8 +1698,8 @@ main nav {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 1em;
     padding: 1em;
   }
@@ -1710,29 +1710,29 @@ main nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
     height: 300px;
-    border: 5px solid #424242;
+    text-align: center;
   }
-  .intro-section .service :nth-child(1) {
-    margin-bottom: .5em;
+  .intro-section .service img {
+    width: 3em;
+    height: 3em;
   }
-  .intro-section .service :nth-child(2) {
+  .intro-section .service :nth-child(2) :nth-child(1) {
+    margin-bottom: .2em;
+  }
+  .intro-section .service :nth-child(2) :nth-child(2) {
     color: #8a8b8b;
-  }
-  .intro-section .service:hover {
-    border: 5px solid #e5383b;
-    -webkit-transition: all .5s;
-    transition: all .5s;
   }
   .pricing-section {
     width: 100%;
