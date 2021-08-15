@@ -1508,7 +1508,7 @@ textarea:hover {
 }
 
 .button:hover {
-  background-color: #e5383b;
+  opacity: .8;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
