@@ -6,16 +6,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $primaryred;
+        background: url(/images/tulsastock1.jpeg);
+        background-size: cover;
+        background-position: center;
 
-        & video {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            left: 0;
-        }
 
         & .landing-container {
             width: 100%;
@@ -27,6 +21,7 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+
 
 
             & h1 {
@@ -58,12 +53,9 @@
             height: 100%;
             width: 100%;
             z-index: 1;
-            // bottom: -1%;
-            // clip-path: polygon(38% 22%, 76% 9%, 100% 28%, 100% 100%, 0 100%, 0 0);
-            // background-color: rgba(0,0,0,.6);
-            // mix-blend-mode: multiply;
-            // object-fit: cover;
-            // mix-blend-mode: multiply;
+            background: radial-gradient(circle farthest-corner at 50% 50%, rgba(0, 0, 0, .51), #000);
+            top: 0;
+            left: 0;
         }
     }
 
@@ -239,62 +231,6 @@
 
 @media (min-width: 1024px) {
 
-    .landing-section {
-        position: relative;
-        width: 100%;
-        height: 667px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        // background: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/images/tulsaskyview1.jpeg);
-        // background-size: cover;
-        // background-position: center;
-        & video {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            left: 0;
-        }
-
-        & .landing-container {
-            width: 100%;
-            max-width: 1000px;
-            padding: 1em;
-            height: 100%;
-            z-index: 1;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-
-            & h1 {
-                margin-bottom: 15px;
-                font-size: 2.5em;
-                color: white;
-            }
-
-            & p {
-                margin-bottom: 20px;
-                font-size: 1.5em;
-                color: $white;
-            }
-
-            & .btns {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-
-                & a {
-                    margin-right: 10px;
-                }
-            }
-
-        }
-
-    }
 
     // Intro Section
 
