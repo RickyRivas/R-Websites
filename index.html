@@ -24,7 +24,7 @@
     <title>R Web Designs</title>
 </head>
 
-<body data-barba='wrapper'>
+<body>
     <!-- Navigation Start -->
     <nav id='nav'>
         <div class='nav-wrapper'>
@@ -49,7 +49,7 @@
     </nav>
     <!-- Navigation End -->
     <!-- Main Start -->
-    <main id='main' data-barba="container" data-barba-namespace="home-section">
+    <main id='main'>
         <a class="top-link hide" href='' id="js-top">
             <div class='fixed-donate'>
                 <p>Website in Production</p>
@@ -58,6 +58,8 @@
         </a>
         <!-- Landing Start -->
         <section class='landing-section'>
+            <div class='noise-layer'>
+            </div>
             <div class='landing-container'>
                 <h1 class=''>Small Business Web Development + Design</h1>
                 <p class=''>No WordPress or Page-builders. beautiful, custom-coded websites delivering the best
@@ -68,8 +70,6 @@
                     <a href='contact.html' class='button'><span>Pricing</span></a>
                 </div>
             </div>
-                  <canvas id="gradient-canvas" data-transition-in>
-        </canvas>
         </section>
         <!-- Landing End -->
         <!-- Intro Section Start -->
@@ -461,7 +461,6 @@
     </main>
     <!-- Main End -->
     <!-- Scripts -->
-    <script src='scripts/gradient.js'></script>
     <script src='scripts/animate.js'></script>
     <script src="scripts/main.js"></script>
     <script src='scripts/alphaHeader.js'></script>

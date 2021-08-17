@@ -14,14 +14,11 @@
             width: 100%;
             padding: 10em 1em 1em 1em;
             height: 100%;
-            z-index: 3;
+            z-index: 2;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            background: rgba(255, 255, 255, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-
 
 
             & h1 {
@@ -44,6 +41,20 @@
                 }
             }
 
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 93% 0%
+        }
+
+        50% {
+            background-position: 0% 100%
+        }
+
+        100% {
+            background-position: 93% 0%
         }
     }
 
@@ -229,7 +240,7 @@
 
 
     // Intro Section
-  
+
 
     // Pricing Section
     .pricing-section {
