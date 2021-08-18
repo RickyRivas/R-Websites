@@ -6,9 +6,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(-45deg, $primaryred, $primary-color, $bg-gray, #ffe5d9);
-        background-size: 400% 400%;
-        animation: gradient 10s ease infinite;
 
         .noise {
             position: absolute;
