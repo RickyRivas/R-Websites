@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 .standard-icon {
   width: 2em;
 }
@@ -20,7 +21,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-family: 'Boska', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 html body {
