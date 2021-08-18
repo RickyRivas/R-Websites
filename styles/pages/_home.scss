@@ -105,24 +105,25 @@
             align-items: center;
             flex-direction: column;
             height: 100%;
-            height: 325px;
+            background-color: white;
             border-radius: $pri-bdr-rad;
             text-align: center;
             z-index: 3;
 
-            & img {
+             img {
                 width: 3em;
                 height: 3em;
             }
 
-            & :nth-child(2) {
+             :nth-child(2) {
 
-                & :nth-child(1) {
-                    margin-bottom: .2em;
+                 :nth-child(1) {
+                    margin-bottom: 10px;
                 }
 
-                & :nth-child(2) {
+                :nth-child(2) {
                     color: $secondary-text-color;
+                    margin-bottom: 10px;
                 }
             }
         }
