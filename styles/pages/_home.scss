@@ -6,19 +6,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $primary-color;
+        background: linear-gradient(-45deg, $primaryred, $primary-color, $bg-gray, #ffe5d9);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
 
         .noise {
             position: absolute;
             top: 0;
             width: 100%;
             height: 100%;
-            background-image: url(/images/landingnoise.png);
-            background-size: auto;
-            background-repeat: repeat;
-            mix-blend-mode: overlay;
-            opacity: .8;
-            z-index: 2;
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         & .landing-container {
@@ -57,19 +55,18 @@
         }
     }
 
-    @keyframes AnimationName {
-        0% {
-            background-position: 93% 0%
-        }
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
-        50% {
-            background-position: 0% 100%
-        }
-
-        100% {
-            background-position: 93% 0%
-        }
-    }
 
     // Intro Section
     .intro-section {
@@ -114,8 +111,6 @@
             height: 325px;
             border-radius: $pri-bdr-rad;
             text-align: center;
-            background-color: white;
-            border: 3px solid $primaryred;
             z-index: 3;
 
             & img {
