@@ -60,14 +60,6 @@ html body {
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     z-index: 100;
   }
-  nav .logo-wrapper {
-    mix-blend-mode: exclusion;
-  }
-  nav .logo-wrapper p {
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    mix-blend-mode: exclusion;
-  }
   nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1616,6 +1608,19 @@ main nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: #f4eae1;
+  }
+  .landing-section .noise {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/landingnoise.png);
+    background-size: auto;
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+    opacity: .8;
+    z-index: 2;
   }
   .landing-section .landing-container {
     position: absolute;
@@ -1624,7 +1629,7 @@ main nav {
     width: 100%;
     padding: 10em 1em 1em 1em;
     height: 100%;
-    z-index: 2;
+    z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
