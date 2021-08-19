@@ -108,6 +108,7 @@
             background-color: white;
             border-radius: $pri-bdr-rad;
             text-align: center;
+            box-shadow: $box-shadow;
             z-index: 3;
 
              img {
@@ -167,6 +168,7 @@
 
                 & img {
                     max-width: 100%;
+                    max-height: 500px;
                 }
             }
 

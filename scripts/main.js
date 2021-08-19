@@ -63,6 +63,23 @@ const reverseSlide = () => {
 
 const navLink2 = document.querySelector('.nav-links');
 navLink2.addEventListener("click", reverseSlide);;
+// Popup 
+
+const popup = document.querySelector(".popup");
+const closeBtn = document.querySelector(".close-btn");
+const enablePopup = () => {
+    popup.style.display = 'block';
+}
+closeBtn.addEventListener("click", () => {
+    popup.style.display = 'none';
+})
+
+window.onload = () => (
+    setTimeout(() => {
+        enablePopup()
+    }, 1000)
+)
+
 
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById("js-top");
