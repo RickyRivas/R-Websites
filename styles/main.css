@@ -1694,6 +1694,8 @@ main nav {
     z-index: 2;
     background-image: url(/images/58926.jpg);
     background-size: cover;
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
   }
   .landing-section .noise {
     position: absolute;
