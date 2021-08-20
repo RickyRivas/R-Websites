@@ -1731,7 +1731,7 @@ main nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    color: black;
+    color: white;
     mix-blend-mode: exclusion;
   }
   .landing-section .landing-container h1 {
