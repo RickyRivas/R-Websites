@@ -1682,6 +1682,20 @@ main nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .landing-section .overlay {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .7;
+    z-index: 2;
+    background-image: url(/images/58926.jpg);
+    background-size: cover;
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
   }
   .landing-section .noise {
     position: absolute;
@@ -1690,6 +1704,11 @@ main nav {
     height: 100%;
     background: rgba(255, 255, 255, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    background: url(/images/noisebg.png);
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+    opacity: .2;
+    z-index: 3;
   }
   .landing-section .landing-container {
     position: absolute;
@@ -1698,7 +1717,7 @@ main nav {
     width: 100%;
     padding: 10em 1em 1em 1em;
     height: 100%;
-    z-index: 3;
+    z-index: 4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1712,6 +1731,8 @@ main nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    color: black;
+    mix-blend-mode: exclusion;
   }
   .landing-section .landing-container h1 {
     margin-bottom: 10px;
