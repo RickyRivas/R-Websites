@@ -13,9 +13,6 @@
             height: 100%;
             opacity: .7;
             z-index: 1;
-            background-image: url(/images/58926.jpg);
-            background-size: cover;
-            filter: blur(50px);
         }
 
         .noise {
@@ -44,7 +41,6 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            color: white;
 
 
             & h1 {

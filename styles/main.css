@@ -1689,10 +1689,6 @@ main nav {
     height: 100%;
     opacity: .7;
     z-index: 1;
-    background-image: url(/images/58926.jpg);
-    background-size: cover;
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
   }
   .landing-section .noise {
     position: absolute;
@@ -1728,7 +1724,6 @@ main nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    color: white;
   }
   .landing-section .landing-container h1 {
     margin-bottom: 10px;
