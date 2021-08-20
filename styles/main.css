@@ -1694,8 +1694,6 @@ main nav {
     z-index: 2;
     background-image: url(/images/58926.jpg);
     background-size: cover;
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
   }
   .landing-section .noise {
     position: absolute;
@@ -1732,7 +1730,6 @@ main nav {
         -ms-flex-direction: column;
             flex-direction: column;
     color: white;
-    mix-blend-mode: exclusion;
   }
   .landing-section .landing-container h1 {
     margin-bottom: 10px;

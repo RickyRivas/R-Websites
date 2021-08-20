@@ -18,7 +18,6 @@
             z-index: 2;
             background-image: url(/images/58926.jpg);
             background-size: cover;
-            filter: blur(50px);
         }
 
         .noise {
@@ -48,7 +47,7 @@
             align-items: flex-start;
             flex-direction: column;
             color: white;
-            mix-blend-mode: exclusion;
+
 
             & h1 {
                 margin-bottom: 10px;
