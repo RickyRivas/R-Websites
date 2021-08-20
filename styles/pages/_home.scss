@@ -8,27 +8,6 @@
         align-items: center;
         overflow: hidden;
 
-        .overlay {
-            width: 100%;
-            height: 100%;
-            opacity: .7;
-            z-index: 1;
-        }
-
-        .noise {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            background: url(/images/noisebg.png);
-            background-repeat: repeat;
-            mix-blend-mode: overlay;
-            opacity: .2;
-            z-index: 3;
-        }
-
          .landing-container {
             position: absolute;
             top: 0;
