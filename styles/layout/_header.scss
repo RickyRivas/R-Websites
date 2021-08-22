@@ -33,6 +33,12 @@
       padding: 0.5em;
       width: 100%;
 
+      .logo-wrapper {
+        img {
+          width: 100px;
+        }
+      }
+
       .nav-links {
         margin: 0;
         position: fixed;

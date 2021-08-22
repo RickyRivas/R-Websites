@@ -79,6 +79,9 @@ html body {
     padding: 0.5em;
     width: 100%;
   }
+  nav .nav-wrapper .logo-wrapper img {
+    width: 100px;
+  }
   nav .nav-wrapper .nav-links {
     margin: 0;
     position: fixed;
@@ -1705,6 +1708,13 @@ main nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
   .landing-section .landing-container h1 {
     margin-bottom: 10px;
