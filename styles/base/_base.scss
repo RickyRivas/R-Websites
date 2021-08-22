@@ -5,17 +5,9 @@
 /**
  * Set up a decent box model on the root element
  */
- 
-  
-@font-face{ 
-	font-family: 'silka';
-	src: url('/fonts/') format('embedded-opentype'),
-       url('/fonts/silka-regular-webfont.woff') format('woff'),
-       url("/fonts/silka-regular-webfont.woff2") format("woff2"),
 
-	     url('/fonts/silka-regular-webfont.ttf') format('truetype'),
-}
- 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +17,9 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-family: 'Playfair Display', serif;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-style: normal;
+
   body {
     background-color: $bg-gray;
   }
