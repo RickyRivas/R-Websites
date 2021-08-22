@@ -331,14 +331,6 @@ html body {
             box-shadow: none;
     z-index: 100;
   }
-  nav .logo-wrapper {
-    background-color: transparent;
-    mix-blend-mode: difference;
-  }
-  nav .logo-wrapper p {
-    color: white;
-    font-weight: bold;
-  }
   nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -359,6 +351,9 @@ html body {
     height: 100%;
     max-width: 1200px;
     margin: auto;
+  }
+  nav .nav-wrapper .logo-wrapper img {
+    width: 250px;
   }
   nav .nav-wrapper .nav-links {
     margin: 0;
@@ -418,7 +413,6 @@ html body {
     display: none;
   }
   nav .nav-wrapper .nav-links li a {
-    color: #e9ecef;
     text-decoration: none;
   }
   nav .nav-wrapper .nav-links li:nth-child(1) {
@@ -541,7 +535,6 @@ html body {
     display: none;
   }
   nav .nav-wrapper .nav-links li a {
-    color: #e9ecef;
     text-decoration: none;
   }
   nav .nav-wrapper .nav-links li:nth-child(1) {

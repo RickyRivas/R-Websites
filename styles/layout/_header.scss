@@ -239,15 +239,6 @@
       z-index: 100;
     }
 
-    & .logo-wrapper {
-      background-color: transparent;
-      mix-blend-mode: difference;
-
-      & p {
-        color: white;
-        font-weight: bold;
-      }
-    }
 
     & .nav-wrapper {
       display: flex;
@@ -262,6 +253,12 @@
       height: 100%;
       max-width: 1200px;
       margin: auto;
+
+      .logo-wrapper {
+        img {
+          width: 250px;
+        }
+      }
 
 
       .nav-links {
@@ -303,7 +300,6 @@
           }
 
           & a {
-            color: $white;
             text-decoration: none;
           }
 
@@ -402,7 +398,6 @@
           }
 
           & a {
-            color: $white;
             text-decoration: none;
           }
 
