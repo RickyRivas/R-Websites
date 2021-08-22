@@ -1626,14 +1626,16 @@ main nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 .popup > div :nth-child(1) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  width: 300px;
 }
 
 .popup > div :nth-child(2) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .popup > div :nth-child(3) {
@@ -1641,12 +1643,13 @@ main nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .popup > div :nth-child(3) :nth-child(1) {
