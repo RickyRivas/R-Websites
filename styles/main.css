@@ -16,12 +16,9 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-family: neue-haas-grotesk-display, sans-serif;
+  font-family: orpheuspro, serif;
+  font-weight: 400;
   font-style: normal;
-}
-
-html body {
-  background-color: #f7f7f7;
 }
 
 @media screen and (min-width: 320px) {
@@ -1593,9 +1590,7 @@ main nav {
   top: 0;
   width: 100%;
   height: 100vh;
-  z-index: 20;
-  -webkit-animation: fadeIn 2s forwards;
-          animation: fadeIn 2s forwards;
+  z-index: 20000;
 }
 
 .popup > div {
@@ -1645,29 +1640,47 @@ main nav {
   margin-right: 10px;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media (min-width: 0px) {
   .landing-section {
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+  }
+  .landing-section .blur-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #e9ecef;
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  .landing-section .blur-overlay ::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #e0afa0;
+    border-radius: 50%;
+    bottom: -15%;
+    left: -15%;
+  }
+  .landing-section .blur-overlay ::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: -10%;
+    right: -10%;
+    background-color: #778da9;
+  }
+  .landing-section .landing-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1677,80 +1690,34 @@ main nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow: hidden;
-  }
-  .landing-section .landing-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10em 1em 1em 1em;
-    height: 100%;
-    z-index: 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: rgba(255, 255, 255, 0);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    padding: 1em;
+    z-index: 2;
   }
   .landing-section .landing-container h1 {
     margin-bottom: 10px;
-    font-size: 2.2em;
   }
   .landing-section .landing-container p {
     margin-bottom: 15px;
-    font-size: 1.3em;
   }
   .landing-section .landing-container .btns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
   .landing-section .landing-container .btns a {
     margin-right: 10px;
-  }
-  @-webkit-keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
   }
   .intro-section {
     width: 100%;

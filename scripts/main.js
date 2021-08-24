@@ -75,9 +75,7 @@ closeBtn.addEventListener("click", () => {
 })
 
 window.onload = () => (
-    setTimeout(() => {
-        enablePopup()
-    }, 1000)
+    enablePopup()
 )
 
 
