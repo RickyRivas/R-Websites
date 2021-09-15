@@ -70,9 +70,9 @@ const closeBtn = document.querySelector(".close-btn");
 const enablePopup = () => {
     popup.style.display = 'block';
 }
-// closeBtn.addEventListener("click", () => {
-//     popup.style.display = 'none';
-// })
+closeBtn.addEventListener("click", () => {
+    popup.style.display = 'none';
+})
 
 window.onload = () => (
     enablePopup()
